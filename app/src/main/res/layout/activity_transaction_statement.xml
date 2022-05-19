@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".Activities.Transaction.TransactionStatementActivity">
+
+    <LinearLayout
+        android:id="@+id/titleAndButtonBack"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20sp"
+        android:orientation="horizontal">
+
+        <ImageButton
+            android:id="@+id/buttonGoBack"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginStart="25dp"
+            android:background="@drawable/back_btn_background"
+            android:src="@drawable/chevron_left"
+            tools:ignore="ContentDescription" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="4dp"
+            android:gravity="center"
+            android:text="@string/create_statement"
+            android:textColor="@color/colorNormalText"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            tools:ignore="RtlSymmetry" />
+    </LinearLayout>
+
+    <ScrollView
+        android:id="@+id/transactionCreationContent"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="20sp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <EditText
+                android:id="@+id/fromDate"
+                style="@style/custom_input"
+                android:clickable="false"
+                android:cursorVisible="false"
+                android:drawableStart="@drawable/ic_baseline_date_range_24"
+                android:focusable="false"
+                android:focusableInTouchMode="false"
+                android:hint="@string/fromDate" />
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="20dp" />
+
+            <EditText
+                android:id="@+id/toDate"
+                style="@style/custom_input"
+                android:clickable="false"
+                android:cursorVisible="false"
+                android:drawableStart="@drawable/ic_baseline_date_range_24"
+                android:focusable="false"
+                android:focusableInTouchMode="false"
+                android:hint="@string/toDate" />
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="20dp" />
+
+            <EditText
+                android:id="@+id/search"
+                style="@style/custom_input"
+                android:drawableStart="@drawable/ic_baseline_local_activity_24"
+                android:hint="@string/site_keyword"
+                android:inputType="text"
+                android:textColor="@color/colorNormalText" />
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="20dp" />
+
+            <EditText
+                android:id="@+id/length"
+                style="@style/custom_input"
+                android:drawableStart="@drawable/ic_baseline_123_24"
+                android:hint="@string/number_of_transactions"
+                android:inputType="number"
+                android:textColor="@color/colorNormalText" />
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="20dp" />
+
+            <TextView
+                style="@style/text_view_color_theme_style"
+                android:text="@string/sort"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+            <!--Spinner widget-->
+            <Spinner
+                android:id="@+id/sortByNatureSpinner"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10sp"
+                android:background="@drawable/custom_spinner" />
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="20dp" />
+
+
+
+            <TextView
+            style="@style/text_view_color_theme_style"
+            android:text="@string/sort_by_column"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+            <!--Category Spinner-->
+            <androidx.appcompat.widget.AppCompatSpinner
+                android:id="@+id/sortByColumnSpinner"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10sp"
+                android:background="@drawable/custom_spinner" />
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="20dp" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/buttonPreviewStatement"
+                style="@style/button_style"
+                android:layout_gravity="center"
+                android:text="Xem trước bản in" />
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="10dp" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/buttonCreateStatement"
+                style="@style/button_style"
+                android:layout_gravity="center"
+                android:text="@string/create_statement" />
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>

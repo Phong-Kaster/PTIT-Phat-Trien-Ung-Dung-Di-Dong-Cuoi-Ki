@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorBackground"
+    android:orientation="vertical"
+    tools:context=".Activities.General.AddGoalActivity"
+    android:padding="20dp">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:orientation="horizontal"
+        android:layout_marginBottom="50dp">
+
+        <ImageButton
+            android:id="@+id/backBtnAddGoal"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:background="@drawable/back_btn_background"
+            android:src="@drawable/chevron_left"/>
+
+        <TextView
+            android:id="@+id/goal_topTitle"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text=""
+            android:textStyle="bold"
+            android:layout_marginEnd="40dp"
+            android:textSize="22sp"
+            android:textColor="@color/colorButtomNavigationMenuPressed"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="vertical"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20dp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/goal_name_tv"
+                style="@style/text_view_label"/>
+
+            <EditText
+                android:id="@+id/goal_name_add"
+                android:inputType="text"
+                android:textColor="@color/colorNormalText"
+                android:hint="@string/goal_name_tv"
+                style="@style/custom_input" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/goal_target_tv"
+                android:layout_marginTop="16dp"
+                style="@style/text_view_label"/>
+
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <EditText
+                    android:id="@+id/goal_amount_add"
+                    style="@style/custom_input"
+                    android:digits="0123456789"
+                    android:hint="@string/goal_target_tv"
+                    android:inputType="number"
+                    android:maxLength="10"
+                    android:textColor="@color/colorNormalText" />
+
+                <TextView
+                    android:id="@+id/tv_currency_amount"
+                    style="@style/text_view_label"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerInParent="true"
+                    android:paddingRight="10dp"
+                    android:text="@string/goal_currency_VN" />
+
+            </RelativeLayout>
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/goal_balance_tv"
+                android:layout_marginTop="16dp"
+                style="@style/text_view_label"/>
+
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <EditText
+                    android:id="@+id/goal_balance_add"
+                    style="@style/custom_input"
+                    android:digits="0123456789"
+                    android:hint="@string/goal_balance_tv"
+                    android:inputType="number"
+                    android:maxLength="10"
+                    android:textColor="@color/colorNormalText" />
+
+                <TextView
+                    android:id="@+id/tv_currency_balance"
+                    style="@style/text_view_label"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerInParent="true"
+                    android:paddingRight="10dp"
+                    android:text="@string/goal_currency_VN" />
+
+            </RelativeLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/goal_deadline_tv"
+                android:layout_marginTop="16dp"
+                style="@style/text_view_label"/>
+
+            <EditText
+                android:id="@+id/goal_date_add"
+                android:inputType="text"
+                android:textColor="@color/colorNormalText"
+                android:hint="@string/goal_deadline_tv"
+                style="@style/custom_input"
+                android:focusable="false"/>
+
+        </LinearLayout>
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/Btn_Add_Goal"
+            style="@style/button_style"
+            android:layout_gravity="center"
+            android:text="@string/goal_add" />
+
+    </LinearLayout>
+
+</LinearLayout>

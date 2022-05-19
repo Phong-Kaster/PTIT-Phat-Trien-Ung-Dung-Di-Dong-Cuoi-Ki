@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <ImageView
+        android:layout_width="130dp"
+        android:layout_height="135dp"
+        android:layout_gravity="center"
+        android:src="@drawable/transaction_menu_photo" />
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="14sp"/>
+    <TextView
+        style="@style/text_view_color_theme_style"
+        android:layout_marginStart="40sp"
+        android:layout_marginEnd="40sp"
+        android:textSize="16sp"
+        android:textAlignment="center"
+        android:text="@string/transaction_menu_content"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="20sp"/>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:layout_gravity="center"
+        android:textSize="10sp"
+        android:text="@string/create_income_transaction"
+        android:id="@+id/transactionMenuButtonCreateIncome"
+        style="@style/button_style"/>
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="20sp"/>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:layout_gravity="center"
+        android:textSize="10sp"
+        android:text="@string/create_expense_transaction"
+        android:id="@+id/transactionMenuButtonCreateExpense"
+        style="@style/button_style"
+        tools:ignore="SmallSp" />
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="20sp"/>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:layout_gravity="center"
+        android:textSize="10sp"
+        android:text="@string/create_statement"
+        android:id="@+id/transactionMenuButtonCreateStatement"
+        style="@style/button_style"
+        tools:ignore="SmallSp" />
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="20sp"/>
+</LinearLayout>

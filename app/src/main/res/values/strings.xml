@@ -1,0 +1,349 @@
+<resources>
+    <string name="app_name">Prudential Finance</string>
+    <string name="start">Start</string>
+    <string name="introduce1" translatable="false">Hỗ trợ quản lý chi tiêu</string>
+    <string name="introduce2" translatable="false">Quản lý các tài khoản cá nhân, thêm các danh mục chi tiêu, các mục tiêu tài chính bản thân muốn thiết lập.</string>
+    <string name="introduce3" translatable="false">Hỗ trợ các thông tin về tài khoản cá nhân</string>
+    <string name="introduce4" translatable="false">Quản lý các tài khoản cá nhân, thêm các danh mục chi tiêu, các mục tiêu tài chính bản thân muốn thiết lập.</string>
+    <string name="introduce5">Welcome back, </string>
+    <string name="introduce6">"Input your email to login "</string>
+    <string name="nice_day">Have a nice day</string>
+    <string name="skip">Skip</string>
+    <string name="next">Continue</string>
+    <string name="prev">Back</string>
+    <string name="greetings">Welcome !</string>
+    <string name="email">Email</string>
+    <string name="username" translatable="false">00xshen00@gmail.com</string>
+    <string name="pass" translatable="false">aIRLIkMax6yBC2</string>
+    <string name="password">Password</string>
+    <string name="forget_password">Forget password?</string>
+    <string name="signIn">Login</string>
+    <string name="or">Or</string>
+    <string name="does_have_an_account">Don\'t have an account?</string>
+    <string name="create_account">Create Account</string>
+
+
+    <string name="have_a_account">Have a account ?</string>
+    <string name="signUpFirstname">Firstname</string>
+    <string name="signUpLastname">Lastname</string>
+    <string name="signUp">SignUp</string>
+    <string name="password_confirm">Confirm your password</string>
+    <string name="create_new_account">Create new account</string>
+    <string name="welcome_back">Welcome back</string>
+    <string name="name_profile" translatable="false">Nguyen Thanh Phong</string>
+    <string name="total_remaining">Total Balance</string>
+    <string name="total_remaining_value" translatable="false">0</string>
+    <string name="dashboard">Dashboard</string>
+    <string name="transaction">Transaction</string>
+    <string name="income">Income</string>
+    <string name="expense">Expense</string>
+    <string name="goal">Goal</string>
+    <string name="budget">Budget</string>
+    <string name="income_example" translatable="false">$125.000</string>
+    <string name="recent">Recent</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="home">Home</string>
+    <string name="setting">Setting</string>
+    <string name="profile">Profile</string>
+    <string name="menus">Category</string>
+    <string name="see_all">See all</string>
+    <string name="card">Card</string>
+    <string name="create_new_transaction">Add new</string>
+    <string name="create_card">Create new card</string>
+    <string name="account">Account</string>
+
+    <string name="personal_information">Personal Information</string>
+    <string name="public_information">Public Information</string>
+    <string name="private_information">Private Information</string>
+
+    <string name="email_information">Email Settings</string>
+    <string name="smtp_information">SMTP Information</string>
+    <string name="auth_smtp_information">Auth Information</string>
+
+    <string name="save">Save</string>
+
+    <string name="old_password">Old Password</string>
+    <string name="change_password">Change password</string>
+    <string name="change_password_detail">Change and confirm your new password</string>
+    <string name="logout">Logout</string>
+    <string name="site_settings">General Setting</string>
+    <string name="application">Application</string>
+    <string name="logo">Logo</string>
+    <string name="other">Other</string>
+    <string name="logotype">Logotype</string>
+    <string name="logomark">Logomark</string>
+    <string name="currency">Currency</string>
+    <string name="language">Language</string>
+
+
+    <string name="site_name">Site Name</string>
+    <string name="site_slogan">Slogan</string>
+    <string name="site_keyword">Keyword</string>
+    <string name="site_description">Description</string>
+
+    <string name="list_of_card">List card</string>
+    <string name="five_million_vnd" translatable="false">5 000 000 VND</string>
+    <string name="card_number" translatable="false">0312 0000 0000 7616</string>
+    <string name="card_description">Bank Account Prudential Finance</string>
+
+    <string name="host">Host</string>
+    <string name="port">Port</string>
+    <string name="encryption">Encryption</string>
+    <string name="from">From</string>
+    <string name="auth">Auth</string>
+    <string name="username_email">Username</string>
+    <string name="begin_create_account">Begin Create Account</string>
+    <string name="enter_account_detail">Enter Account Detail</string>
+    <string name="account_number">Account Number</string>
+    <string name="balance">Balance</string>
+    <string name="bank">Bank</string>
+    <string name="description">Description</string>
+    <string name="confirm">Confirm</string>
+    <string name="update_account">Update Account</string>
+
+    <!--    RECOVERY -->
+    <string name="recovery_title">Reset Password</string>
+    <string name="recovery_descrip">Input your email you use for your account.</string>
+    <string name="recovery_send_btn">Send email</string>
+    <string name="recovery_code_btn">Enter OTP</string>
+
+    <string name="reset_password_OTPtitle">Confirmed your identity</string>
+    <string name="reset_password_OTPdescription">Chúng tôi đã gửi mã OTP cho bạn. \nHãy nhập mã chúng tôi đã gửi cho bạn.</string>
+    <string name="reset_password_OTPresend">Resend OTP.</string>
+    <string name="reset_password_OTPbtn_send">Submit</string>
+
+    <string name="reset_password_btn_reset">Change password</string>
+    <string name="reset_password_description">Create your new password and confirm to login</string>
+    <string name="reset_password_newpassword">Your new password</string>
+    <string name="reset_password_confirm_newpassword">Confirm your new password</string>
+    <string name="recent_transactions">Recent Transactions</string>
+    <string name="menu">Menu</string>
+
+
+    <!--    GOALS-->
+    <string name="goal_name">Name</string>
+    <string name="goal_deadline" translatable="false">15/11/2000</string>
+    <string name="Deleted">Deleted</string>
+    <string name="goal_name_tv">Name</string>
+    <string name="goal_target_tv">Target</string>
+    <string name="goal_balance_tv">Balance</string>
+    <string name="goal_deadline_tv">Deadline</string>
+    <string name="goal_add">Add Goal</string>
+    <string name="goal_balance">Đã có : 1.000đ</string>
+    <string name="goal_amount" translatable="false">10.000đ</string>
+    <string name="goal_currency_VN" translatable="false">VNĐ</string>
+    <string name="goal_detail">Detail goal</string>
+    <string name="goal_edit">Edit goal</string>
+    <string name="goal_deposit">Deposit goal</string>
+    <string name="goal_export">Export file pdf</string>
+    <string name="export_excel">Export file excel</string>
+    <string name="export_success">Export successful</string>
+    <string name="goal_deposit_tv">Deposit</string>
+    <string name="deposit_title">Deposit your money for goal</string>
+    <string name="error_deposit_max">Your money have been over the goal please input maximum\n</string>
+    <string name="deposit_description">Input your money you have save for this goal</string>
+    <string name="number_format_exception">Format Number Exception</string>
+    <string name="search">Search here...</string>
+
+
+
+    <string name="action">Action</string>
+
+    <array name="sort" >
+        <item> In progress</item>
+        <item> Done</item>
+        <item>  Outdated </item>
+    </array>
+    <array name="action" >
+        <item> Detail</item>
+        <item> Edit</item>
+        <item>  Deposit </item>
+    </array>
+    <array name="action_forgoal23" >
+        <item> Detail</item>
+        <item> Edit</item>
+    </array>
+
+    <string name="had_money">Balance:</string>
+    <string name="done">Done</string>
+
+
+    <string name="categories">Category</string>
+    <string name="alertDefault">Oops! Something went wrong. Please try again later!</string>
+    <string name="alertNumber">Please input positive numbers only</string>
+    <string name="alertTitle">Oops!</string>
+    <string name="alertConfirm">Data you have deleted can be never recover. Are you sure ?</string>
+    <string name="alertWarning">Warning!</string>
+
+    <string name="edit_category">Edit Category</string>
+    <string name="add_category">Add new category</string>
+
+    <string name="category_name">Category Name</string>
+    <string name="category_desc">Description</string>
+    <string name="category_color">Color</string>
+    <string name="cancel">Cancel</string>
+    <string name="colorPicker">Color Picker</string>
+
+    <string name="user_management">User Management</string>
+    <string name="add_user">Add User</string>
+    <string name="edit_user">Edit User</string>
+    <string name="account_type">Account Type</string>
+    <string name="active">Active</string>
+
+    <string name="reportIncome">Report Income</string>
+    <string name="reportExpense">Report Expense</string>
+    <string name="report">Report</string>
+    <string name="report_category_expense">Total Expense</string>
+    <string name="report_category_income">Total Income</string>
+    <string name="turn_on_off_dark_mode">Dark mode</string>
+    <string name="turn_on_dark_mode">Turn on dark mode</string>
+    <string name="turn_off_dark_mode">Turn off dark mode</string>
+
+    <string name="month">Month</string>
+    <string name="year">Year</string>
+    <string name="week">Week</string>
+
+    <string name="amount_value" translatable="false">x5</string>
+    <string name="money_value" translatable="false">1,000,000đ</string>
+    <string name="money_string">Money</string>
+
+    <string name="date_value" translatable="false">Sun, May 8</string>
+    <string name="create_transaction">Add new transaction</string>
+    <string name="prudential_bank_credit_card">Credit Card</string>
+    <string name="amount">Amount</string>
+    <string name="name">Name</string>
+    <string name="reference">Reference ID</string>
+    <string name="date">Date</string>
+    <string name="task_destroyer">Anti-tank artillery</string>
+    <string name="category">Category</string>
+    <string name="statement">Statement</string>
+    <string name="detail">"Detail "</string>
+    <string name="transaction_name">Transaction name:</string>
+    <string name="cost">Cost:</string>
+    <string name="account_name">Account name:</string>
+    <string name="category_name_2">Category Name:</string>
+    <string name="reference_2">Payment reference:</string>
+    <string name="edit">Edit</string>
+    <string name="transaction_menu_content">Thêm hoạt động thu nhập, chi tiêu hoặc tạo sao kê</string>
+    <string name="create_income_transaction">"Add new Income transaction "</string>
+    <string name="create_expense_transaction">Add new expense transactions</string>
+    <string name="create_statement">Create Statement</string>
+    <string name="you_don_have_any_transaction">There is no transaction suitable your search!</string>
+    <string name="you_don_have_any_ATM">You didn\'t have any ATM yet.</string>
+    <string name="edit_transaction">Edit transaction</string>
+    <string name="number_of_transactions">Total number transaction</string>
+    <string name="sort">Sort</string>
+    <string name="sort_by_column">Sort by column</string>
+    <string name="sort_by_category">Sort by category</string>
+    <string name="fromDate">Từ ngày</string>
+    <string name="toDate">To date</string>
+    <string name="go_back">Go back</string>
+    <string name="reportAccount">Balance report</string>
+    <string name="reportAccountBalanceMonth">Monthly balance report</string>
+
+    <string name="total_money_income_week">All money you have made in this week</string>
+    <string name="total_money_expense_week">All money you have spent in this week</string>
+
+    <string name="total_money_income_month">All money you have made in this month</string>
+    <string name="total_money_expense_month">All money you have spent in this month</string>
+
+    <string name="total_money_income_year">All money you have made in this year</string>
+    <string name="total_money_expense_year">All money you have spent in this year</string>
+    <string name="preview_statement">Preview</string>
+    <string name="vietnam_central_bank">Vietnam Central Bank</string>
+    <string name="branch_prudential_bank">Bank: Prudential Bank</string>
+    <string name="preview_account_owner" translatable="false">Account owner:</string>
+    <string name="preview_account_name">Account name:</string>
+    <string name="nguyen_thanh_phong" translatable="false">Nguyễn Thành Phong</string>
+    <string name="email_value" translatable="false">phongkaster@gmail.com</string>
+    <string name="account_statement">ACCOUNT STATEMENT</string>
+    <string name="thank_you_for_using_prudential_bank_s_service">Thank you so much for chosing us.</string>
+    <string name="prudential_bank_together_for_the_future" translatable="false">PRUDENTIAL BANK - Chung niềm tin vững tương lại</string>
+    <string name="note" translatable="false">Chú ý: Bản sao kê này của ngân hàng TMCP Prudential Bank không tạo nên bất kì cam đoan hay bảo đảm tại thời điểm hiện tại hay tương lai về các nghĩa vụ của khách hàng đã xác nhận với bên thứ ba</string>
+    <string name="number_of_row">Total number row</string>
+    <string name="delete">Delete</string>
+    <string name="chart">Chart</string>
+
+
+    <string name="jan">January</string>
+    <string name="feb">February</string>
+    <string name="mar">March</string>
+    <string name="apr">April</string>
+    <string name="may">May</string>
+    <string name="jun">June</string>
+    <string name="jul">July</string>    
+    <string name="aug">August</string>
+    <string name="sep">September</string>
+    <string name="oct">October</string>
+    <string name="nov">November</string>
+    <string name="dec">December</string>
+
+    <string name="jan_short" translatable="false">1</string>
+    <string name="feb_short" translatable="false">2</string>
+    <string name="mar_short" translatable="false">3</string>
+    <string name="apr_short" translatable="false">4</string>
+    <string name="may_short" translatable="false">5</string>
+    <string name="jun_short" translatable="false">6</string>
+    <string name="jul_short" translatable="false">7</string>
+    <string name="aug_short" translatable="false">8</string>
+    <string name="sep_short" translatable="false">9</string>
+    <string name="oct_short" translatable="false">10</string>
+    <string name="nov_short" translatable="false">11</string>
+    <string name="dec_short" translatable="false">12</string>
+
+    <string name="total">Total</string>
+    <string name="name_col">Name</string>
+    <string name="masked_as_read">Masked As Read</string>
+
+    <string name="appearance">Appearance</string>
+    <string name="warning_change_language">You must restart your application to apply these changes</string>
+
+    <string name="creat_new_account">Thêm tài khoản ngân hàng mới</string>
+    <string name="add_account_to_manage_easily">Thêm thông tin tài khoản ngân hàng mới của bạn để tiện quản lý chi tiêu</string>
+
+    <!--    Config google services-->
+    <string name="server_client_id" translatable="false">538016634184-aqf25ouan4v2bscstec48atnh05ibv13.apps.googleusercontent.com</string>
+
+    <!--    Config facebook services-->
+    <string name="facebook_app_id" translatable="false">477715650706961</string>
+    <string name="fb_login_protocol_scheme" translatable="false">fb477715650706961</string>
+    <string name="facebook_client_token">b4344548855c73b2adc72bbe3917b1d7</string>
+
+    <string name="budget_title">Budget</string>
+    <string name="budget_edit_title">Edit budget</string>
+    <string name="budget_report_title">Report Budget</string>
+    <string name="budget_add_title">Add budget</string>
+
+    <string name="budget_element_name">Total budget</string>
+    <string name="budget_element_description">Total budget for meals</string>
+    <string name="budget_element_date">March 2022</string>
+    <string name="budget_month">Month</string>
+    <string name="budget_year">Year</string>
+    <string name="vn">VND</string>
+
+    <string name="budget_add_categories">Category</string>
+    <string name="budget_add_budget">Budget</string>
+    <string name="budget_description_hint">Budget description</string>
+    <string name="budget_description">Description</string>
+    <string name="budget_error">Error</string>
+    <string name="budget_des_value">Description</string>
+    <string name="budget_value" translatable="false">30000</string>
+
+    <string name="chart_center_lable">Budget</string>
+    <string name="report_lable">Budget</string>
+
+    <string name="name_title">Name</string>
+    <string name="description_title">Description</string>
+    <string name="todate_title">To Date</string>
+    <string name="amount_title">Amount</string>
+    <string name="report_lable_real">Actually</string>
+    <string name="report_lable_plan">Plan</string>
+    <string name="budget_value_have">Remaining Amount</string>
+
+
+    <string name="english">English</string>
+    <string name="vietnamese">Vietnamese</string>
+
+</resources>

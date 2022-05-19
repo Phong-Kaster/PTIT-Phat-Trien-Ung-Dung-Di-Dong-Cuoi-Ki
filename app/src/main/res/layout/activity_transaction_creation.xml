@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activities.Transaction.TransactionCreationActivity">
+
+    <LinearLayout
+        android:id="@+id/transactionCreationTitleAndButtonBack"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20sp"
+        android:orientation="horizontal">
+
+        <ImageButton
+            android:id="@+id/transactionCreationButtonGoBack"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginStart="25dp"
+            android:background="@drawable/back_btn_background"
+            android:src="@drawable/chevron_left"
+            tools:ignore="ContentDescription" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="4dp"
+            android:gravity="center"
+            android:text="@string/create_transaction"
+            android:textColor="@color/colorNormalText"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            tools:ignore="RtlSymmetry" />
+    </LinearLayout>
+
+
+    <ScrollView
+        android:id="@+id/transactionCreationContent"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/transactionCreationTitleAndButtonBack"
+        android:padding="20sp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+
+            <!--Spinner widget-->
+            <Spinner
+                android:id="@+id/transactionCreationAccountSpinner"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20sp"
+                android:background="@drawable/custom_spinner" />
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="20dp" />
+
+            <EditText
+                android:id="@+id/transactionCreationAmount"
+                style="@style/custom_input"
+                android:drawableStart="@drawable/ic_baseline_123_24"
+                android:hint="@string/amount"
+                android:inputType="number"
+                android:textColor="@color/colorNormalText" />
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="20dp" />
+
+            <EditText
+                android:id="@+id/transactionCreationName"
+                style="@style/custom_input"
+                android:drawableStart="@drawable/ic_baseline_local_activity_24"
+                android:hint="@string/name"
+                android:inputType="text"
+                android:textColor="@color/colorNormalText" />
+
+            <!--Category Spinner-->
+            <androidx.appcompat.widget.AppCompatSpinner
+                android:id="@+id/transactionCreationCategorySpinner"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20sp"
+                android:background="@drawable/custom_spinner" />
+
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="20dp" />
+
+            <EditText
+                android:id="@+id/transactionCreationReference"
+                style="@style/custom_input"
+                android:drawableStart="@drawable/ic_baseline_accessibility_24"
+                android:hint="@string/reference"
+                android:inputType="text"
+                android:textColor="@color/colorNormalText" />
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="20dp" />
+
+            <EditText
+                android:id="@+id/transactionCreationDescription"
+                style="@style/custom_input"
+                android:layout_height="80dp"
+                android:drawableStart="@drawable/ic_baseline_description_24"
+                android:hint="@string/description"
+                android:inputType="text"
+                android:textColor="@color/colorNormalText" />
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="20dp" />
+
+            <EditText
+                android:id="@+id/transactionCreationDate"
+                style="@style/custom_input"
+                android:clickable="false"
+                android:cursorVisible="false"
+                android:drawableStart="@drawable/ic_baseline_date_range_24"
+                android:focusable="false"
+                android:focusableInTouchMode="false"
+                android:hint="@string/date" />
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="30dp" />
+
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/transactionCreationButtonSave"
+                style="@style/button_style"
+                android:layout_gravity="center"
+                android:text="@string/save" />
+
+        </LinearLayout>
+
+    </ScrollView>
+
+
+
+
+</RelativeLayout>

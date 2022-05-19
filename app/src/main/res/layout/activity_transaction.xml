@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    tools:context=".Activities.Transaction.TransactionActivity"
+    android:padding="20dp">
+
+    <LinearLayout
+        android:weightSum="1"
+        android:id="@+id/cardFragmentTitleAndButtonBack"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <ImageButton
+            android:layout_weight="0.01"
+            android:id="@+id/transactionButtonGoBack"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:background="@drawable/back_btn_background"
+            android:src="@drawable/chevron_left"
+            tools:ignore="ContentDescription" />
+
+        <TextView
+            android:layout_weight="0.98"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="@string/recent_transactions"
+            android:textColor="@color/colorNormalText"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            tools:ignore="RtlSymmetry" />
+
+        <ImageButton
+            android:layout_weight="0.01"
+            android:id="@+id/transactionButtonCreate"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:background="@drawable/back_btn_background"
+            android:src="@drawable/ic_baseline_add_circle_24" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/transactionNotice"
+        android:layout_marginTop="20sp"
+        android:layout_gravity="center"
+        android:text="@string/you_don_have_any_transaction"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="20sp" />
+
+    <androidx.appcompat.widget.SearchView
+        android:layout_gravity="center"
+        android:id="@+id/searchView"
+        app:queryBackground="@color/transparent"
+        android:layout_width="370dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/custom_input"
+        app:queryHint="@string/search"
+        app:iconifiedByDefault="false"/>
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="20sp" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/transactionRecycleView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+
+</LinearLayout>

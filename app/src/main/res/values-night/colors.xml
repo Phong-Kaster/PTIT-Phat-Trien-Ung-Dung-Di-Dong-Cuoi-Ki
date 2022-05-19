@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="purple_200">#FFBB86FC</color>
+    <color name="purple_500">#FF6200EE</color>
+    <color name="purple_700">#FF3700B3</color>
+    <color name="teal_200">#FF03DAC5</color>
+    <color name="teal_700">#FF018786</color>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+
+    <color name="colorPrimary">#6C63FF</color>
+    <color name="colorPrimaryDark">#6C63FF</color>
+    <color name="colorAccent">#03DAC5</color>
+
+    <!--Phong's color-->
+    <color name="colorTheme">#2D313D</color>
+    <color name="colorThemeText">#ffffff</color>
+    <color name="colorNormalText">#ffffff</color>
+    <color name="colorAlternativeText">#ffffff</color>
+    <color name="colorSupportText">#8D8F97</color>
+    <color name="colorBackground">#2D313D</color>
+    <color name="colorSupportBackground">#2D313D</color>
+
+    <color name="colorBottomNavigationMenu">#2D313D</color>
+    <color name="colorButtomNavigationMenuPressed">#ffffff</color>
+    <color name="colorButtomNavigationMenuEnable">#8D8F97</color>
+
+    <color name="colorRed">#FC0303</color>
+    <color name="colorGreen">#43A047</color>
+
+    <color name="colorShortcut">#8D8F97</color>
+
+    <!--Hau's color-->
+    <color name="colorTransparentWhite">#cccccc</color>
+    <color name="backgroundInput">#515155</color>
+    <color name="backgroundWhite">#515155</color>
+    <color name="backgroundBlack">#FFFFFFFF</color>
+    <color name="backgroundIcon">#d7d9e0</color>
+</resources>

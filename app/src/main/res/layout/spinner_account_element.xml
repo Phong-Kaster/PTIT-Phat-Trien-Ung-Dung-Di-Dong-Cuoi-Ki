@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/cardImage"
+        android:layout_width="50dp"
+        android:layout_height="25dp"
+        android:layout_marginStart="20sp"
+        android:layout_marginTop="20sp"
+        android:src="@drawable/card2"
+        tools:ignore="ContentDescription" />
+
+    <TextView
+        android:id="@+id/cardName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="17dp"
+        android:layout_marginTop="18dp"
+        android:layout_toEndOf="@+id/cardImage"
+        android:text="@string/prudential_bank_credit_card"
+        android:textColor="@color/colorNormalText"
+        android:textSize="10sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/cardBalance"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/cardName"
+        android:layout_marginStart="17dp"
+        android:layout_toEndOf="@+id/cardImage"
+        android:text="@string/money_value"
+        android:textColor="@color/colorTheme"
+        android:textSize="10sp"
+        android:textStyle="bold" />
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="20sp"
+        android:layout_below="@+id/cardBalance" />
+</RelativeLayout>

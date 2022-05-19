@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorBackground"
+    android:orientation="vertical"
+    tools:context=".Activities.Auth.SignUpActivity">
+
+    <TextView
+        style="@style/text_view_color_theme_style"
+        android:text= "Tạo một tài khoản"
+        android:textSize="24sp"
+        android:layout_marginTop="60dp"
+        android:layout_marginStart="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <TextView
+        style="@style/text_view_color_normal_style"
+        android:layout_marginStart="20dp"
+        android:textSize="24sp"
+        android:textColor="@color/teal_700"
+        android:textStyle="bold"
+        android:text="@string/app_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="10dp"/>
+
+    <LinearLayout
+        android:padding="20dp"
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:layout_height="wrap_content">
+
+        <EditText
+            android:id="@+id/signUpFirstname"
+            android:drawableStart="@drawable/user"
+            android:hint="@string/signUpFirstname"
+            style="@style/custom_input" />
+
+
+        <EditText
+            android:id="@+id/signUpLastname"
+            android:hint="@string/signUpLastname"
+            android:drawableStart="@drawable/user"
+            android:layout_marginTop="10dp"
+            style="@style/custom_input" />
+
+        <EditText
+            android:id="@+id/signUpEmail"
+            android:hint="@string/email"
+            android:inputType="textEmailAddress"
+            android:drawableStart="@drawable/mail"
+            android:layout_marginTop="10dp"
+            style="@style/custom_input" />
+
+        <EditText
+            android:id="@+id/signUpPass"
+            android:hint="@string/password"
+            android:inputType="textPassword"
+            android:drawableStart="@drawable/lock"
+            android:layout_marginTop="10dp"
+            style="@style/custom_input" />
+
+        <EditText
+            android:id="@+id/signUpPassConfirm"
+            android:hint="@string/password_confirm"
+            android:inputType="textPassword"
+            android:drawableStart="@drawable/lock"
+            android:layout_marginTop="10dp"
+            style="@style/custom_input" />
+
+    </LinearLayout>
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="20dp"/>
+
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/signUpBtn"
+        style="@style/button_style"
+        android:layout_gravity="center"
+        android:text="@string/signUp" />
+
+    <TextView
+        style="@style/text_view_color_normal_style"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:gravity="center"
+        android:textSize="14sp"
+        android:layout_marginVertical="15dp"
+        android:text="@string/or"/>
+
+    <LinearLayout
+        android:layout_marginBottom="15dp"
+        android:paddingHorizontal="50dp"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageButton
+            android:id="@+id/loginSignInWithGoogle"
+            android:src="@drawable/google"
+            android:background="@drawable/back_btn_background"
+            android:paddingVertical="15dp"
+            android:paddingHorizontal="60dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <Space
+            android:layout_width="10dp"
+            android:layout_height="match_parent"/>
+
+        <ImageButton
+            android:id="@+id/loginSignInWithFacebook"
+            android:src="@drawable/facebook"
+            android:background="@drawable/back_btn_background"
+            android:paddingVertical="15dp"
+            android:paddingHorizontal="60dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_gravity="center"
+        android:orientation="horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <TextView
+            style="@style/text_view_color_normal_style"
+            android:layout_marginStart="20dp"
+            android:text="@string/have_a_account"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+        <TextView
+            android:id="@+id/signUpLoginBtn"
+            style="@style/text_view_color_normal_style"
+            android:layout_marginStart="10dp"
+            android:textStyle="bold"
+            android:textColor="@color/teal_700"
+            android:text="@string/signIn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+    </LinearLayout>
+
+
+
+</LinearLayout>

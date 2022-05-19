@@ -1,0 +1,267 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".Activities.Transaction.TransactionPreviewStatementActivity">
+
+    <LinearLayout
+        android:id="@+id/titleAndButtonBack"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20sp"
+        android:orientation="horizontal">
+
+        <ImageButton
+            android:id="@+id/transactionPreviewButtonGoBack"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginStart="25dp"
+            android:background="@drawable/back_btn_background"
+            android:src="@drawable/chevron_left"
+            tools:ignore="ContentDescription" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="4dp"
+            android:gravity="center"
+            android:text="@string/preview_statement"
+            android:textColor="@color/colorNormalText"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            tools:ignore="RtlSymmetry" />
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/titleAndButtonBack">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+
+            <TextView
+
+                android:id="@+id/vietnamCentralBank"
+                style="@style/preview_statement_text_view_style"
+                android:layout_marginTop="50dp"
+                android:text="@string/vietnam_central_bank" />
+
+            <TextView
+                android:id="@+id/branchPrudentialBank"
+                style="@style/preview_statement_text_view_style"
+                android:layout_below="@id/vietnamCentralBank"
+                android:text="@string/branch_prudential_bank" />
+
+            <TextView
+                android:id="@+id/accountOwnerTitle"
+                style="@style/preview_statement_text_view_style"
+                android:layout_below="@id/branchPrudentialBank"
+                android:text="@string/preview_account_owner" />
+
+            <TextView
+                android:id="@+id/accountOwner"
+                style="@style/preview_statement_text_view_style"
+                android:layout_below="@id/branchPrudentialBank"
+                android:layout_toEndOf="@id/accountOwnerTitle"
+                android:text="@string/nguyen_thanh_phong" />
+
+            <TextView
+                android:id="@+id/accountNameTitle"
+                style="@style/preview_statement_text_view_style"
+                android:layout_below="@id/accountOwnerTitle"
+                android:text="@string/preview_account_name" />
+
+            <TextView
+                android:id="@+id/accountName"
+                style="@style/preview_statement_text_view_style"
+                android:layout_below="@id/accountOwner"
+                android:layout_toEndOf="@id/accountOwnerTitle"
+                android:text="@string/nguyen_thanh_phong" />
+
+            <TextView
+                android:id="@+id/dateTitle"
+                style="@style/preview_statement_text_view_style"
+                android:layout_below="@id/accountNameTitle"
+                android:text="@string/date" />
+
+            <TextView
+                android:id="@+id/today"
+                style="@style/preview_statement_text_view_style"
+                android:layout_below="@id/accountNameTitle"
+                android:layout_toEndOf="@id/dateTitle"
+                android:text="@string/date_value" />
+
+            <TextView
+                android:id="@+id/emailTitle"
+                style="@style/preview_statement_text_view_style"
+                android:layout_below="@id/dateTitle"
+                android:text="@string/email" />
+
+            <TextView
+                android:id="@+id/accountEmail"
+                style="@style/preview_statement_text_view_style"
+                android:layout_below="@id/dateTitle"
+                android:layout_toEndOf="@id/emailTitle"
+                android:text="@string/email_value" />
+
+            <TextView
+                android:id="@+id/dateFromTitle"
+                style="@style/preview_statement_text_view_style"
+                android:layout_below="@id/emailTitle"
+                android:text="@string/fromDate" />
+
+            <TextView
+                android:id="@+id/dateFrom"
+                style="@style/preview_statement_text_view_style"
+                android:layout_below="@id/emailTitle"
+                android:layout_toEndOf="@id/dateFromTitle"
+                android:text="@string/date_value" />
+
+            <TextView
+                android:id="@+id/dateToTitle"
+                style="@style/preview_statement_text_view_style"
+                android:layout_below="@id/dateFromTitle"
+                android:text="@string/toDate" />
+
+            <TextView
+                android:id="@+id/dateTo"
+                style="@style/preview_statement_text_view_style"
+                android:layout_below="@id/dateFromTitle"
+                android:layout_toEndOf="@id/dateToTitle"
+                android:text="@string/date_value" />
+
+            <TextView
+                android:id="@+id/accountStatement"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_below="@id/dateTo"
+                android:layout_alignParentStart="true"
+                android:gravity="center"
+                android:layout_marginTop="28dp"
+                android:text="@string/account_statement"
+                android:textColor="@color/colorNormalText"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <ScrollView
+                android:id="@+id/tableTransactionScrollView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/accountStatement"
+                android:layout_margin="10dp">
+
+                <HorizontalScrollView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TableLayout
+                        android:id="@+id/transactionTable"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@color/colorBackground">
+
+                        <!-- Column Name -->
+                        <TableRow>
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="#"
+                                android:textColor="@color/colorNormalText"
+                                android:textSize="14sp" />
+
+                            <TextView
+                                style="@style/preview_statement_text_view_style"
+                                android:text="@string/date" />
+
+                            <TextView
+                                style="@style/preview_statement_text_view_style"
+                                android:text="Tham chiếu" />
+
+                            <TextView
+                                style="@style/preview_statement_text_view_style"
+                                android:text="Tên" />
+
+                            <TextView
+                                style="@style/preview_statement_text_view_style"
+                                android:text="Mô tả" />
+
+                            <TextView
+                                style="@style/preview_statement_text_view_style"
+                                android:text="Số tiền" />
+                        </TableRow>
+
+                    </TableLayout>
+
+
+                </HorizontalScrollView>
+
+            </ScrollView>
+
+            <TextView
+                android:id="@+id/footer1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tableTransactionScrollView"
+                android:layout_alignParentStart="true"
+                android:layout_marginStart="0dp"
+                android:layout_marginTop="40dp"
+                android:gravity="center"
+                android:text="@string/thank_you_for_using_prudential_bank_s_service"
+                android:textColor="@color/colorNormalText"
+                android:textSize="11sp"
+                android:textStyle="italic|bold" />
+
+            <TextView
+                android:id="@+id/footer2"
+                android:gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/footer1"
+                android:layout_alignParentStart="true"
+                android:text="***********************"
+                android:textColor="@color/colorNormalText"
+                android:textSize="12sp"
+                android:textStyle="italic|bold" />
+
+            <TextView
+                android:id="@+id/footer3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/footer1"
+                android:layout_alignParentStart="true"
+                android:layout_marginTop="50dp"
+                android:text="@string/prudential_bank_together_for_the_future"
+                android:textAlignment="center"
+                android:textColor="@color/colorNormalText"
+                android:textSize="14sp"
+                android:textStyle="italic|bold" />
+
+            <TextView
+                android:id="@+id/footer4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/footer3"
+                android:layout_alignParentStart="true"
+                android:layout_marginStart="3dp"
+                android:layout_marginTop="27dp"
+                android:padding="30dp"
+                android:text="@string/note"
+                android:textColor="@color/colorNormalText"
+                android:textSize="14sp"
+                android:textStyle="italic" />
+
+        </RelativeLayout>
+
+    </ScrollView>
+
+
+
+
+
+</RelativeLayout>

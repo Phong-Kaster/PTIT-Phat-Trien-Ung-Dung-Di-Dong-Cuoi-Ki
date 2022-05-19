@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activities.Report.CategoryExportActivity"
+    android:orientation="vertical"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:padding="20dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:orientation="horizontal"
+        android:layout_marginBottom="10dp"
+        android:weightSum="1">
+
+        <ImageButton
+            android:layout_weight="0.01"
+            android:id="@+id/backBtn"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:background="@drawable/back_btn_background"
+            android:src="@drawable/chevron_left"/>
+
+        <TextView
+            android:layout_weight="0.98"
+            android:id="@+id/topTitle"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="@string/report_category_income"
+            android:textStyle="bold"
+            android:textSize="22sp"
+            android:textColor="@color/colorButtomNavigationMenuPressed"/>
+
+        <ImageButton
+            android:layout_weight="0.01"
+            android:id="@+id/btnMenu"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:background="@drawable/back_btn_background"
+            android:src="@drawable/ic_baseline_more_horiz_24"/>
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="vertical"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20dp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/number_of_row"
+                style="@style/text_view_label"/>
+
+            <EditText
+                android:id="@+id/number_of_row"
+                android:inputType="text"
+                android:textColor="@color/colorNormalText"
+                android:hint="@string/number_of_row"
+                style="@style/custom_input" />
+
+            <TextView
+                android:layout_marginTop="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/sort"
+                style="@style/text_view_label"/>
+
+            <Spinner
+                android:id="@+id/sortByNatureSpinner"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10sp"
+                android:background="@drawable/custom_spinner" />
+
+
+            <TextView
+                android:layout_marginTop="10dp"
+                style="@style/text_view_label"
+                android:text="@string/sort_by_column"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+            <Spinner
+                android:id="@+id/sortByColumnSpinner"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10sp"
+                android:background="@drawable/custom_spinner" />
+
+
+
+        </LinearLayout>
+
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/exportBtn"
+            style="@style/button_style"
+            android:layout_gravity="center"
+            android:text="@string/export_excel" />
+
+    </LinearLayout>
+
+
+
+
+
+</LinearLayout>

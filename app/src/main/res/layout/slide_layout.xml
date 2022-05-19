@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorBackground"
+    tools:context=".IntroduceActivity">
+
+
+    <ImageView
+        android:id="@+id/image_slide"
+        android:layout_width="match_parent"
+        android:layout_height="421dp"
+        android:layout_marginTop="100dp"
+        android:gravity="center"
+        android:src="@drawable/device2" />
+
+    <FrameLayout
+        android:id="@+id/introPhotoLayout"
+        android:layout_width="match_parent"
+        android:foregroundGravity="bottom"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="320dp"
+        android:background="@color/white"
+        android:paddingVertical="60dp">
+
+        <RelativeLayout
+            android:layout_below="@id/image_slide"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                style="@style/text_view_color_theme_style"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingHorizontal="70dp"
+                android:id="@+id/title_slide"
+                android:gravity="center"
+                android:text="@string/introduce3"
+                android:textAlignment="center"
+                android:textSize="24sp" />
+
+            <TextView
+                style="@style/text_view_color_normal_style"
+                android:id="@+id/description_slide"
+                android:layout_below="@+id/title_slide"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:paddingHorizontal="20dp"
+                android:gravity="center"
+                android:text="@string/introduce4"
+                android:textSize="11sp" />
+
+        </RelativeLayout>
+
+    </FrameLayout>
+
+
+
+</RelativeLayout>

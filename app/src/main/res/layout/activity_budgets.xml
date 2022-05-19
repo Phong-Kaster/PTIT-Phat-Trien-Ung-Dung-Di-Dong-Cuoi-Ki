@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorBackground"
+    android:orientation="vertical"
+    android:padding="20dp"
+    tools:context=".Activities.Budget.BudgetsActivity">
+
+    <LinearLayout
+        android:weightSum="1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:orientation="horizontal"
+        android:layout_marginBottom="10dp">
+
+        <ImageButton
+            android:layout_weight="0.01"
+            android:id="@+id/budget_back"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:background="@drawable/back_btn_background"
+            android:src="@drawable/chevron_left"/>
+
+        <TextView
+            android:layout_weight="0.98"
+            android:id="@+id/topTitle"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="@string/budget_title"
+            android:textStyle="bold"
+            android:textSize="22sp"
+            android:textColor="@color/colorButtomNavigationMenuPressed"/>
+
+        <ImageButton
+            android:layout_weight="0.01"
+            android:id="@+id/budget_add"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginEnd="10sp"
+            android:background="@drawable/back_btn_background"
+            android:src="@drawable/ic_add"/>
+
+        <ImageButton
+            android:layout_weight="0.01"
+            android:id="@+id/budget_pdf"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:background="@drawable/back_btn_background"
+            android:src="@drawable/ic_baseline_archive_24"/>
+
+    </LinearLayout>
+    <androidx.appcompat.widget.SearchView
+        android:id="@+id/budget_search"
+        app:queryBackground="@color/transparent"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:background="@drawable/custom_input"
+        app:queryHint="@string/search"
+        app:iconifiedByDefault="false"/>
+    <androidx.swiperefreshlayout.widget.SwipeRefreshLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/refresh_layout_budget">
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:padding="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/rv_budgets"
+            android:divider="@color/transparent"/>
+
+    </androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
+
+</LinearLayout>

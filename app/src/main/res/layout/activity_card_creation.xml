@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".Activities.Card.CardCreationActivity">
+
+    <!-- TITLE & BACK BUTTON -->
+    <LinearLayout
+        android:id="@+id/cardCreationHeader"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:orientation="horizontal">
+
+        <ImageButton
+            android:layout_marginTop="10dp"
+            android:layout_marginStart="10dp"
+            android:id="@+id/cardCreationButtonGoBack"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:background="@drawable/back_btn_background"
+            android:src="@drawable/chevron_left"/>
+
+        <TextView
+            android:id="@+id/cardCreationTitle"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="@string/create_account"
+            android:textStyle="bold"
+            android:layout_marginEnd="40dp"
+            android:textSize="22sp"
+            android:textColor="@color/colorTheme"/>
+    </LinearLayout>
+
+    <!-- REFERENCED PHOTO -->
+    <ImageView
+        android:id="@+id/cardCreationReferencePhoto"
+        android:layout_width="340dp"
+        android:layout_height="190dp"
+        android:layout_below="@+id/cardCreationHeader"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="33dp"
+        android:layout_marginTop="5sp"
+        android:src="@drawable/card2" />
+
+
+
+
+    <TextView
+        android:id="@+id/cardCreationInputTitleArea"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/cardCreationReferencePhoto"
+        android:layout_marginStart="20sp"
+        android:layout_marginTop="20sp"
+        android:text="@string/enter_account_detail"
+        android:textColor="@color/colorNormalText"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+    <!-- 4 INPUT FIELDS -->
+
+    <ScrollView
+        android:layout_below="@+id/cardCreationInputTitleArea"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_marginStart="20sp"
+            android:layout_marginEnd="20sp"
+            android:layout_below="@id/cardCreationInputTitleArea"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="10dp"/>
+
+            <EditText
+                android:id="@+id/cardCreationCardNumber"
+                style="@style/custom_input"
+                android:drawableStart="@drawable/ic_baseline_confirmation_number_24"
+                android:hint="@string/account_number"
+                android:inputType="number"
+                android:textColor="@color/colorNormalText"
+                android:autofillHints="false" />
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="20dp"/>
+
+            <EditText
+                android:id="@+id/cardCreationCardBalance"
+                style="@style/custom_input"
+                android:drawableStart="@drawable/ic_baseline_account_balance_wallet_24"
+                android:hint="@string/balance"
+                android:inputType="number"
+                android:textColor="@color/colorNormalText" />
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="20dp"/>
+
+            <EditText
+                android:drawableStart="@drawable/ic_baseline_home_work_24"
+                android:id="@+id/cardCreationCardBank"
+                style="@style/custom_input"
+                android:hint="@string/bank"
+                android:inputType="textPersonName"
+                android:textColor="@color/colorNormalText"
+                android:autofillHints="false" />
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="20dp"/>
+
+            <EditText
+                android:drawableStart="@drawable/ic_baseline_description_24"
+                android:layout_weight="2"
+                android:background="@drawable/custom_input"
+                android:drawablePadding="20dp"
+                android:layout_width="match_parent"
+                android:layout_height="70dp"
+                android:paddingStart="20dp"
+                android:id="@+id/cardCreationCardDescription"
+                android:textColor="@color/colorNormalText"
+                android:hint="@string/description"
+                style="@style/custom_input" />
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="50dp"/>
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/cardCreationButtonCreate"
+                style="@style/card_fragment_button_style"
+                android:layout_marginStart="15dp"
+                android:layout_marginEnd="25dp"
+                android:layout_marginBottom="31dp"
+                android:text="@string/create_card" />
+
+        </LinearLayout>
+
+    </ScrollView>
+</RelativeLayout>

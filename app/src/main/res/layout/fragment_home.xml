@@ -1,0 +1,299 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:gravity="center"
+    tools:context=".Fragment.HomeFragment">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="274dp"
+        android:gravity="left"
+        tools:ignore="RtlHardcoded">
+
+        <RelativeLayout
+            android:id="@+id/header_banner"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <RelativeLayout
+                android:id="@+id/header_banner_title"
+                android:layout_width="match_parent"
+                android:layout_height="230dp"
+                android:background="@drawable/home_fragment_header_style"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/fragmentHomeTitleHeader"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="20sp"
+                    android:layout_marginTop="30dp"
+                    android:text="@string/welcome_back"
+                    android:textColor="@color/colorAlternativeText"
+                    android:textSize="12sp" />
+
+                <TextView
+                    android:id="@+id/fragmentHomeAuthName"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/fragmentHomeTitleHeader"
+                    android:layout_marginStart="20sp"
+                    android:layout_marginTop="3sp"
+                    android:text="@string/name_profile"
+                    android:textColor="@color/colorAlternativeText"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
+
+                <FrameLayout
+                    android:id="@+id/image_logo"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="-76dp"
+                    android:layout_marginTop="30dp"
+                    android:layout_toEndOf="@+id/fragmentHomeAuthName">
+
+                    <ImageButton
+                        android:id="@+id/ringBellBtn"
+                        android:layout_width="40sp"
+                        android:layout_height="40sp"
+                        android:background="@drawable/transparent_background_border"
+                        android:src="@drawable/ic_baseline_notifications_active_24" />
+
+                    <androidx.appcompat.widget.AppCompatImageView
+                        android:id="@+id/ivHaveNotif"
+                        android:layout_width="10dp"
+                        android:layout_height="10dp"
+                        android:layout_gravity="top|right"
+                        app:srcCompat="@drawable/notif_focus" />
+                </FrameLayout>
+
+
+            </RelativeLayout>
+
+            <ImageView
+                android:id="@+id/card_balance"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/header_banner_title"
+                android:layout_centerInParent="true"
+                android:layout_marginTop="-125dp"
+                android:adjustViewBounds="true"
+                android:paddingHorizontal="20dp"
+                android:scaleType="fitCenter"
+                android:src="@drawable/card_balance" />
+        </RelativeLayout>
+
+
+        <FrameLayout
+            android:id="@+id/layoutNotif"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="70dp"
+            android:layout_marginEnd="30dp"
+            android:animateLayoutChanges="true"
+            android:background="@drawable/notification_background"
+            android:padding="10dp"
+            android:visibility="invisible">
+
+            <ProgressBar
+                android:id="@+id/progress_bar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center" />
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/rvNotifications"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_below="@+id/recentImage" />
+        </FrameLayout>
+
+        <TextView
+            android:id="@+id/total_remaining"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/header_banner"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="40dp"
+            android:layout_marginTop="-110dp"
+            android:text="@string/total_remaining"
+            android:textColor="@color/white"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/fragmentHomeAuthRemaining"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/total_remaining"
+            android:layout_marginStart="40dp"
+            android:layout_marginTop="20dp"
+            android:text="@string/total_remaining_value"
+            android:textColor="@color/white"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+    </RelativeLayout>
+
+
+    <!-- 4 SHORTCUTS -->
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/customized_layout"
+        android:orientation="vertical"
+        android:paddingBottom="10sp"
+        android:paddingStart="10sp"
+        android:paddingEnd="10sp"
+        tools:ignore="UseCompoundDrawables">
+        <!-- Button Transactions -->
+
+
+        <!-- Button Income Statistics -->
+
+        <ImageButton
+            android:id="@+id/fragmentHomeButtonTransactions"
+            style="@style/dashboard_image_button_style"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="27dp"
+            android:layout_marginTop="11dp"
+            android:src="@drawable/icon_transactions"
+            tools:ignore="ContentDescription" />
+
+        <TextView
+            android:id="@+id/fragmentHomeTitleTransactions"
+            style="@style/dashboard_text_view_style"
+            android:layout_below="@+id/fragmentHomeButtonTransactions"
+            android:layout_alignParentStart="true"
+            android:layout_marginStart="20dp"
+            android:text="@string/transaction" />
+        <!-- Button Expense Statistics -->
+
+        <ImageButton
+            android:id="@+id/fragmentHomeButtonCategory"
+            style="@style/dashboard_image_button_style"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="111dp"
+            android:layout_marginTop="11dp"
+            android:src="@drawable/ic_baseline_category_24"
+            tools:ignore="ContentDescription" />
+
+        <TextView
+            android:id="@+id/fragmentHomeTitleCategory"
+            style="@style/dashboard_text_view_style"
+            android:layout_below="@+id/fragmentHomeButtonTransactions"
+            android:layout_alignParentStart="true"
+            android:layout_marginStart="110dp"
+            android:text="@string/category" />
+
+        <ImageButton
+            android:id="@+id/fragmentHomeButtonBudget"
+            style="@style/dashboard_image_button_style"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="205dp"
+            android:layout_marginTop="11dp"
+            android:src="@drawable/icon_outflow"
+            tools:ignore="ContentDescription" />
+
+
+        <!-- Button Goal -->
+
+        <TextView
+            android:id="@+id/fragmentHomeTitleExpenseStatistics"
+            style="@style/dashboard_text_view_style"
+            android:layout_below="@+id/fragmentHomeButtonCategory"
+            android:layout_alignParentStart="true"
+            android:layout_marginStart="210dp"
+            android:text="@string/expense" />
+
+        <ImageButton
+            android:id="@+id/fragmentHomeButtonGoal"
+            style="@style/dashboard_image_button_style"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="286dp"
+            android:layout_marginTop="11dp"
+            android:src="@drawable/icon_goal"
+            tools:ignore="ContentDescription" />
+
+        <TextView
+            android:id="@+id/dashboardTitleGoal"
+            style="@style/dashboard_text_view_style"
+            android:layout_below="@+id/fragmentHomeButtonGoal"
+            android:layout_alignParentStart="true"
+            android:layout_marginStart="295dp"
+            android:text="@string/goal" />
+
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/homeFragmentNotice"
+        android:layout_marginTop="20sp"
+        android:layout_gravity="center"
+        android:text="@string/you_don_have_any_transaction"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <!-- RECENT TRANSACTIONS -->
+    <RelativeLayout
+        android:id="@+id/homeFragmentTransactionLayout"
+        android:layout_marginStart="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp">
+
+        <ImageView
+            android:id="@+id/recentImage"
+            android:src="@drawable/recent"
+            android:layout_width="20sp"
+            android:layout_height="20sp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toEndOf="@+id/recentImage"
+            android:text="@string/recent"
+            android:textColor="@color/colorSupportText"
+            android:textSize="12sp" />
+
+
+
+        <TextView
+            android:id="@+id/homeFragmentSeeAll"
+            android:layout_width="86dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_marginStart="279dp"
+            android:layout_marginEnd="17dp"
+            android:layout_toEndOf="@+id/recentImage"
+            android:text="@string/see_all"
+            android:textColor="@color/colorShortcut"
+            android:textSize="12sp"
+            android:textStyle="bold" />
+
+
+        <androidx.swiperefreshlayout.widget.SwipeRefreshLayout
+            android:id="@+id/homeFragmentSwipeRefreshLayout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/homeFragmentSeeAll">
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/fragmentHomeRecentTransactions"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_below="@+id/recentImage" />
+
+        </androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
+
+    </RelativeLayout>
+</LinearLayout>

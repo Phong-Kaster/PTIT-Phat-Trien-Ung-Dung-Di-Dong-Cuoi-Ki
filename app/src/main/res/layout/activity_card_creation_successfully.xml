@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="270dp"
+    android:orientation="vertical"
+    android:background="@drawable/notification_background"
+    android:layout_height="200dp">
+
+    <ImageView
+        android:layout_gravity="center"
+        android:background="@drawable/ic_success_background"
+        android:src="@drawable/ic_baseline_done_24"
+        android:layout_width="48sp"
+        android:layout_height="48sp"
+        tools:ignore="ContentDescription" />
+
+    <TextView
+        android:text="Chúc mừng !"
+        android:textStyle="bold"
+        android:textSize="18sp"
+        android:textColor="@color/colorTheme"
+        android:layout_gravity="center"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        tools:ignore="HardcodedText" />
+
+    <TextView
+        android:layout_gravity="center"
+        android:textSize="14sp"
+        android:textStyle="bold"
+        android:textColor="@color/colorTheme"
+        android:text="Thao tác thành công!"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        tools:ignore="HardcodedText" />
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="10sp"
+        tools:ignore="SmallSp" />
+
+    <TextView
+        android:layout_gravity="center"
+        android:textAlignment="center"
+        android:text="Thao tác của bạn đã được lưu thành công"
+        android:layout_width="900sp"
+        android:layout_height="wrap_content"/>
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="10sp"
+        tools:ignore="SmallSp" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:layout_gravity="center"
+        android:id="@+id/buttonDismiss"
+        android:layout_width="224dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="35dp"
+        android:background="@drawable/button_style_state"
+        android:text="@string/confirm"
+        android:textColor="@color/colorAlternativeText" />
+</LinearLayout>

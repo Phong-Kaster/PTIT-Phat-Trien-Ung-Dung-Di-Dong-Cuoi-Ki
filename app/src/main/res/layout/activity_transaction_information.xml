@@ -1,0 +1,214 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activities.Transaction.TransactionInformationActivity">
+
+    <LinearLayout
+        android:id="@+id/transactionInforTitleAndButtonBack"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20sp"
+        android:orientation="horizontal">
+
+        <ImageButton
+            android:id="@+id/transactionInforButtonGoBack"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginStart="25dp"
+            android:background="@drawable/back_btn_background"
+            android:src="@drawable/chevron_left"
+            tools:ignore="ContentDescription" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:gravity="center"
+            android:text="@string/detail"
+            android:textColor="@color/colorNormalText"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            tools:ignore="RtlSymmetry" />
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/transactionInforAvatar"
+        android:layout_width="88dp"
+        android:layout_height="88dp"
+        android:layout_below="@+id/transactionInforTitleAndButtonBack"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="161dp"
+        android:layout_marginTop="27dp"
+        android:src="@drawable/pop_up" />
+
+    <ScrollView
+        android:paddingTop="20sp"
+        android:id="@+id/transactionInforContent"
+        android:layout_below="@+id/transactionInforAvatar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:paddingBottom="10dp"
+                android:id="@+id/layoutName"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:id="@+id/transactionInforNameTitle"
+                    style="@style/transaction_information_text_view_title"
+                    android:text="@string/transaction_name"
+                    tools:ignore="RtlSymmetry" />
+
+                <TextView
+                    android:id="@+id/transactionInforNameContent"
+                    style="@style/transaction_information_text_view_content"
+                    android:text="@string/introduce1" />
+
+            </LinearLayout>
+
+
+
+            <LinearLayout
+                android:id="@+id/layoutDate"
+                android:layout_below="@id/layoutName"
+                android:orientation="horizontal"
+                android:paddingBottom="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/transactionInforDateTitle"
+                    style="@style/transaction_information_text_view_title"
+                    android:text="@string/date"
+                    tools:ignore="RtlSymmetry" />
+
+                <TextView
+                    android:id="@+id/transactionInforDateContent"
+                    style="@style/transaction_information_text_view_content"
+                    android:text="@string/date_value"
+                    tools:ignore="RtlSymmetry" />
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_below="@+id/layoutDate"
+                android:id="@+id/layoutAmount"
+                android:layout_width="match_parent"
+                android:paddingBottom="10dp"
+                android:orientation="horizontal"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/transactionInforAmountTitle"
+                    style="@style/transaction_information_text_view_title"
+                    android:text="@string/cost" />
+
+                <TextView
+                    android:id="@+id/transactionInforAmountContent"
+                    style="@style/transaction_information_text_view_content"
+                    android:text="@string/income_example" />
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_below="@id/layoutAmount"
+                android:id="@+id/layoutAccountName"
+                android:layout_width="match_parent"
+                android:paddingBottom="10dp"
+                android:orientation="horizontal"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/transactionInforAccountTitle"
+                    style="@style/transaction_information_text_view_title"
+                    android:text="@string/account_name" />
+
+                <TextView
+                    android:id="@+id/transactionInforAccountContent"
+                    style="@style/transaction_information_text_view_content"
+                    android:text="@string/app_name" />
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_below="@id/layoutAccountName"
+                android:id="@+id/layoutCategoryName"
+                android:layout_width="match_parent"
+                android:paddingBottom="10dp"
+                android:orientation="horizontal"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/transactionInforCategoryTitle"
+                    style="@style/transaction_information_text_view_title"
+                    android:text="@string/category_name_2" />
+
+                <TextView
+                    android:id="@+id/transactionInforCategoryContent"
+                    style="@style/transaction_information_text_view_content"
+                    android:text="@string/task_destroyer" />
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_below="@id/layoutCategoryName"
+                android:id="@+id/layoutReference"
+                android:layout_width="match_parent"
+                android:paddingBottom="10dp"
+                android:orientation="horizontal"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/transactionInforReferenceTitle"
+                    style="@style/transaction_information_text_view_title"
+                    android:text="@string/reference_2" />
+
+                <TextView
+                    android:id="@+id/transactionInforReferenceContent"
+                    style="@style/transaction_information_text_view_content"
+                    android:text="@string/app_name" />
+
+            </LinearLayout>
+
+
+
+
+
+            <TextView
+                android:id="@+id/transactionInforDescription"
+                style="@style/transaction_information_text_view_title"
+                android:layout_below="@id/layoutReference"
+                android:text="@string/description" />
+
+            <TextView
+                android:id="@+id/transactionInforDescriptionContent"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/transactionInforDescription"
+                android:paddingStart="20sp"
+                android:paddingEnd="20sp"
+                android:text="@string/introduce2"
+                android:textColor="@color/colorNormalText"
+                android:textSize="14sp" />
+        </RelativeLayout>
+    </ScrollView>
+
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/transactionInforButtonEdit"
+        style="@style/transaction_information_button_style"
+        android:layout_below="@id/transactionInforContent"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="102dp"
+        android:text="@string/edit" />
+</RelativeLayout>

@@ -1,0 +1,346 @@
+<resources>
+    <string name="app_name">Prudential Finance</string>
+    <string name="start">Bắt đầu</string>
+    <string name="introduce1">Hỗ trợ quản lý chi tiêu</string>
+    <string name="introduce2">Quản lý các tài khoản cá nhân, thêm các danh mục chi tiêu, các mục tiêu tài chính bản thân muốn thiết lập.</string>
+    <string name="introduce3">Hỗ trợ các thông tin về tài khoản cá nhân</string>
+    <string name="introduce4">Quản lý các tài khoản cá nhân, thêm các danh mục chi tiêu, các mục tiêu tài chính bản thân muốn thiết lập.</string>
+    <string name="introduce5">Chào mừng quay lại, </string>
+    <string name="introduce6">hãy nhập thông tin để đăng nhập!</string>
+    <string name="nice_day">Ngày mới tốt lành</string>
+    <string name="skip">Bỏ qua</string>
+    <string name="next">Tiếp tục</string>
+    <string name="prev">Lùi lại</string>
+    <string name="greetings">Xin Chào !</string>
+    <string name="email">Email</string>
+    <string name="username">00xshen00@gmail.com</string>
+    <string name="pass">aIRLIkMax6yBC2</string>
+    <string name="password">Mật khẩu</string>
+    <string name="forget_password">Quên mật khẩu ?</string>
+    <string name="signIn">Đăng nhập</string>
+    <string name="or">Hoặc</string>
+    <string name="does_have_an_account">Chưa có tài khoản ?</string>
+    <string name="create_account">Tạo mới tài khoản</string>
+
+
+    <string name="have_a_account">Đã có tài khoản ?</string>
+    <string name="signUpFirstname">Họ và tên đệm</string>
+    <string name="signUpLastname">Tên</string>
+    <string name="signUp">Đăng ký</string>
+    <string name="password_confirm">Nhập lại mật khẩu</string>
+    <string name="create_new_account">Tạo một tài khoản</string>
+    <string name="welcome_back">Chào mừng trở lại</string>
+    <string name="name_profile">Nguyễn Văn Chung</string>
+    <string name="total_remaining">Tổng số dư</string>
+    <string name="total_remaining_value">0</string>
+    <string name="dashboard">Dashboard</string>
+    <string name="transaction">Giao Dịch</string>
+    <string name="income">Thu nhập</string>
+    <string name="expense">Chi tiêu</string>
+    <string name="goal">Mục tiêu</string>
+    <string name="budget">Ngân sách</string>
+    <string name="income_example">$125.000</string>
+    <string name="recent">Gần đây</string>
+
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="home">Trang chủ</string>
+    <string name="setting">Cài đặt</string>
+    <string name="profile">Hồ sơ</string>
+    <string name="menus">Danh mục</string>
+    <string name="see_all">Xem tất cả</string>
+    <string name="card">Thẻ</string>
+    <string name="create_new_transaction">Thêm mới</string>
+    <string name="create_card">Tạo thẻ mới</string>
+    <string name="account">Tai khoan</string>
+
+    <string name="personal_information">Thông tin cá nhân</string>
+    <string name="public_information">Thông tin công khai</string>
+    <string name="private_information">Thông tin ẩn</string>
+
+    <string name="email_information">Cài đặt Email</string>
+    <string name="smtp_information">Thông tin smtp</string>
+    <string name="auth_smtp_information">Thông tin auth</string>
+
+    <string name="save">Lưu thay đổi</string>
+
+    <string name="old_password">Mật khẩu cũ</string>
+    <string name="change_password">Thay đổi mật khẩu</string>
+    <string name="change_password_detail">Đổi mật khẩu và xác nhận mật khẩu mới để đăng nhập.</string>
+    <string name="logout">Đăng xuất</string>
+    <string name="site_settings">Cài đặt chung</string>
+    <string name="application">Ứng dụng</string>
+    <string name="logo">Logo</string>
+    <string name="other">Khác</string>
+    <string name="logotype">Logotype</string>
+    <string name="logomark">Logomark</string>
+    <string name="currency">Tiền tệ</string>
+    <string name="language">Ngôn ngữ</string>
+
+
+    <string name="site_name">Tên site</string>
+    <string name="site_slogan">Khẩu hiệu</string>
+    <string name="site_keyword">Từ khoá</string>
+    <string name="site_description">Mô tả</string>
+
+    <string name="list_of_card">Danh sách thẻ</string>
+    <string name="five_million_vnd">5 000 000 VND</string>
+    <string name="card_number">0312 0000 0000 7616</string>
+    <string name="card_description">Tài khoản ngân hàng Prudential Finance</string>
+
+    <string name="host">Máy chủ</string>
+    <string name="port">Cổng</string>
+    <string name="encryption">Mã hoá</string>
+    <string name="from">Từ</string>
+    <string name="auth">Xác thực</string>
+    <string name="username_email">Tên đăng nhập</string>
+    <string name="begin_create_account">Bắt đầu tạo tài khoản</string>
+    <string name="enter_account_detail">Nhập thông tin tài khoản</string>
+    <string name="account_number">Số tài khoản</string>
+    <string name="balance">Số dư hiện tại</string>
+    <string name="bank">Tên Ngân hàng</string>
+    <string name="description">Mô tả chi tiết</string>
+    <string name="confirm">Xác nhận</string>
+    <string name="update_account">Chỉnh sửa thông tin thẻ</string>
+
+    <!--    RECOVERY -->
+    <string name="recovery_title">Lấy lại mật khẩu</string>
+    <string name="recovery_descrip">Hãy nhập email của bạn đã cung cấp cho chúng tôi.</string>
+    <string name="recovery_send_btn">Gửi email cho tôi</string>
+    <string name="recovery_code_btn">Nhập OTP</string>
+
+    <string name="reset_password_OTPtitle">Xác nhận danh tính của bạn</string>
+    <string name="reset_password_OTPdescription">Chúng tôi đã gửi mã OTP cho bạn. \nHãy nhập mã chúng tôi đã gửi cho bạn.</string>
+    <string name="reset_password_OTPresend">Gửi lại mã OTP.</string>
+    <string name="reset_password_OTPbtn_send">Xác nhận.</string>
+
+    <string name="reset_password_btn_reset">Thay đổi mật khẩu.</string>
+    <string name="reset_password_description">Hãy tạo mật khẩu mới và xác nhận mật khẩu mới để đăng nhập..</string>
+    <string name="reset_password_newpassword">Nhập mật khẩu mới.</string>
+    <string name="reset_password_confirm_newpassword">Nhập lại mật khẩu mới.</string>
+    <string name="recent_transactions">Giao dịch gần đây</string>
+    <string name="menu">Menu</string>
+
+
+    <!--    GOALS-->
+    <string name="goal_name">Tên mục tiêu</string>
+    <string name="goal_deadline">15/11/2000</string>
+    <string name="Deleted">Đã xóa</string>
+    <string name="goal_name_tv">Tên mục tiêu</string>
+    <string name="goal_target_tv">Mục tiêu</string>
+    <string name="goal_balance_tv">Số dư hiện có</string>
+    <string name="goal_deadline_tv">Ngày hết hạn</string>
+    <string name="goal_add">Thêm mục tiêu</string>
+    <string name="goal_balance">Đã có : 1.000đ</string>
+    <string name="goal_amount">10.000đ</string>
+    <string name="goal_detail">Chi tiết mục tiêu</string>
+    <string name="goal_edit">Sửa mục tiêu</string>
+    <string name="goal_deposit">Thêm tiền cho mục tiêu</string>
+    <string name="goal_export">Xuất file pdf</string>
+    <string name="export_excel">Xuất file excel</string>
+    <string name="export_success">Xuất thành công</string>
+    <string name="goal_deposit_tv">Tiền cộng dồn</string>
+    <string name="action">Hành động</string>
+    <array name="sort">
+        <item> Chưa hoàn thành</item>
+        <item>  Hoàn thành</item>
+        <item>  Quá hạn </item>
+    </array>
+    <array name="action" >
+        <item> Chi tiết</item>
+        <item> Sửa</item>
+        <item>  Thêm tiền </item>
+    </array>
+    <array name="action_forgoal23">
+        <item> Chi tiết</item>
+        <item> Sửa</item>
+    </array>
+    <string name="had_money">Đã có</string>
+    <string name="done">Hoàn thành</string>
+    <string name="deposit_title">Thêm tiền cho mục tiêu</string>
+    <string name="deposit_description">Nhập số tiền bạn đã tiết kiệm cho mục tiêu</string>
+    <string name="error_deposit_max">Số tiền bạn thêm vào đã vượt quá mục tiêu, vui lòng thêm tối đa </string>
+    <string name="number_format_exception">Lỗi chuyển số</string>
+    <string name="search">Tìm kiếm...</string>
+
+
+
+    <string name="categories">Thể loại</string>
+    <string name="alertDefault">Oops! Đã xảy ra lỗi. Vui lòng thử lại sau!</string>
+    <string name="alertNumber">Hãy nhập đúng ký tự số nguyên dương > 0</string>
+    <string name="alertTitle">Oops!</string>
+    <string name="alertConfirm">Bạn có chắc không? Dữ liệu đã xoá không thể khôi phục!</string>
+    <string name="alertWarning">Warning!</string>
+
+    <string name="edit_category">Sửa thể loại</string>
+    <string name="add_category">Thêm thể loại</string>
+
+    <string name="category_name">Tên thể loại</string>
+    <string name="category_desc">Mô tả</string>
+    <string name="category_color">Màu sắc</string>
+    <string name="cancel">Huỷ</string>
+    <string name="colorPicker">Chọn màu sắc</string>
+
+    <string name="user_management">Quản lý người dùng</string>
+    <string name="add_user">Thêm người dùng</string>
+    <string name="edit_user">Sửa người dùng</string>
+    <string name="account_type">Loại tài khoản</string>
+    <string name="active">Kích hoạt tài khoản</string>
+
+    <string name="reportIncome">Báo cáo thu nhập</string>
+    <string name="reportExpense">Báo cáo chi tiêu</string>
+    <string name="report">Báo cáo</string>
+    <string name="report_category_expense">Thống kê chi tiêu</string>
+    <string name="report_category_income">Thống kê thu nhập</string>
+    <string name="turn_on_off_dark_mode">Chế độ ban đêm</string>
+    <string name="turn_on_dark_mode">Bật chế độ ban đêm</string>
+    <string name="turn_off_dark_mode">Tắt chế độ dark mode</string>
+
+    <string name="month">Tháng</string>
+    <string name="year">Năm</string>
+    <string name="week">Tuần</string>
+
+    <string name="money_value">1,000,000đ</string>
+    <string name="money_string">Số tiền</string>
+
+    <string name="date_value">Chủ Nhật, Th5 8</string>
+    <string name="create_transaction">Thêm giao dịch</string>
+    <string name="prudential_bank_credit_card">Credit Card</string>
+    <string name="amount">Nhập số tiền</string>
+    <string name="name">Nhập tên hoạt động</string>
+    <string name="reference">Nội dung tham chiếu</string>
+    <string name="date">Ngày:</string>
+    <string name="task_destroyer">Pháo chống tăng</string>
+    <string name="category">Thể loại</string>
+    <string name="statement">Tạo sao kê</string>
+    <string name="detail">Chi tiết hoạt động</string>
+    <string name="transaction_name">Tên giao dịch:</string>
+    <string name="cost">Chi phí:</string>
+    <string name="account_name">Tên tài khoản:</string>
+    <string name="category_name_2">Tên thể loại:</string>
+    <string name="reference_2">Nội dung tham chiếu:</string>
+    <string name="edit">Chỉnh sửa</string>
+    <string name="transaction_menu_content">Thêm hoạt động thu nhập, chi tiêu hoặc tạo sao kê</string>
+    <string name="create_income_transaction">Tạo hoạt động thu nhập</string>
+    <string name="create_expense_transaction">Tạo hoạt động chi tiêu</string>
+    <string name="create_statement">Tạo sao kê</string>
+    <string name="you_don_have_any_transaction">Bạn chưa có giao dịch nào !</string>
+    <string name="you_don_have_any_ATM">Bạn chưa có thẻ ATM nào</string>
+    <string name="edit_transaction">Chỉnh sửa hoạt động</string>
+    <string name="number_of_transactions">Số lượng giao dịch trả về</string>
+    <string name="sort">Sắp theo theo chiều</string>
+    <string name="sort_by_column">Sắp xếp theo cột</string>
+    <string name="sort_by_category">Sắp xếp theo thể loại</string>
+    <string name="fromDate">Từ ngày</string>
+    <string name="toDate">Tới ngày</string>
+    <string name="go_back">Trở về</string>
+    <string name="reportAccount">Báo cáo số dư tài khoản</string>
+    <string name="reportAccountBalanceMonth">Báo cáo số dư tháng</string>
+
+    <string name="total_money_income_week">Tổng tiền kiếm được trong tuần</string>
+    <string name="total_money_expense_week">Tổng tiền đã chi trong tuần</string>
+
+    <string name="total_money_income_month">Tổng tiền kiếm được trong tháng</string>
+    <string name="total_money_expense_month">Tổng tiền đã chi trong tháng</string>
+
+    <string name="total_money_income_year">Tổng tiền kiếm được trong năm</string>
+    <string name="total_money_expense_year">Tổng tiền đã chi trong năm</string>
+    <string name="preview_statement">Xem trước bản in</string>
+    <string name="vietnam_central_bank">Ngân hàng Trung ương Việt Nam</string>
+    <string name="branch_prudential_bank">Chi nhánh: Prudential Bank</string>
+    <string name="preview_account_owner">Chủ tài khoản:</string>
+    <string name="preview_account_name">Tên tài khoản:</string>
+    <string name="nguyen_thanh_phong">Nguyễn Thành Phong</string>
+    <string name="email_value">phongkaster@gmail.com</string>
+    <string name="account_statement">SAO KÊ TÀI KHOẢN</string>
+    <string name="thank_you_for_using_prudential_bank_s_service">Trân trọng cảm ơn quý khách đã sử dụng dịch vụ của Prudential Bank</string>
+    <string name="prudential_bank_together_for_the_future">PRUDENTIAL BANK - Chung niềm tin vững tương lại</string>
+    <string name="note">Chú ý: Bản sao kê này của ngân hàng TMCP Prudential Bank không tạo nên bất kì cam đoan hay bảo đảm tại thời điểm hiện tại hay tương lai về các nghĩa vụ của khách hàng đã xác nhận với bên thứ ba</string>
+    <string name="number_of_row">Số lượng cột trả về</string>
+    <string name="delete">Xoá</string>
+    <string name="chart">Biểu đồ</string>
+
+
+    <string name="jan">Tháng 1</string>
+    <string name="feb">Tháng 2</string>
+    <string name="mar">Tháng 3</string>
+    <string name="apr">Tháng 4</string>
+    <string name="may">Tháng 5</string>
+    <string name="jun">Tháng 6</string>
+    <string name="jul">Tháng 7</string>
+    <string name="aug">Tháng 8</string>
+    <string name="sep">Tháng 9</string>
+    <string name="oct">Tháng 10</string>
+    <string name="nov">Tháng 11</string>
+    <string name="dec">Tháng 12</string>
+
+    <string name="jan_short">1</string>
+    <string name="feb_short">2</string>
+    <string name="mar_short">3</string>
+    <string name="apr_short">4</string>
+    <string name="may_short">5</string>
+    <string name="jun_short">6</string>
+    <string name="jul_short">7</string>
+    <string name="aug_short">8</string>
+    <string name="sep_short">9</string>
+    <string name="oct_short">10</string>
+    <string name="nov_short">11</string>
+    <string name="dec_short">12</string>
+
+    <string name="total">Tổng cộng</string>
+    <string name="name_col">Tên</string>
+    <string name="masked_as_read">Đánh dấu đã đọc</string>
+
+    <string name="appearance">Giao diện</string>
+    <string name="warning_change_language">Bạn phải khởi động lại máy tính của mình để áp dụng các thay đổi này</string>
+
+    <string name="creat_new_account">Thêm tài khoản ngân hàng mới</string>
+    <string name="add_account_to_manage_easily">Thêm thông tin tài khoản ngân hàng mới của bạn để tiện quản lý chi tiêu</string>
+
+    <!--    Config google services-->
+    <string name="server_client_id">538016634184-aqf25ouan4v2bscstec48atnh05ibv13.apps.googleusercontent.com</string>
+
+    <!--    Config facebook services-->
+    <string name="facebook_app_id">477715650706961</string>
+    <string name="fb_login_protocol_scheme">fb477715650706961</string>
+    <string name="facebook_client_token">b4344548855c73b2adc72bbe3917b1d7</string>
+
+    <string name="budget_title">Ngân sách chi tiêu</string>
+    <string name="budget_edit_title">Sửa ngân sách</string>
+    <string name="budget_report_title">Xem thống kê ngân sách</string>
+    <string name="budget_add_title">Thêm ngân sách</string>
+
+    <string name="budget_element_name">Tổng tiền ăn</string>
+    <string name="budget_element_description">Tổng ngân sách cho việc ăn uống</string>
+    <string name="budget_element_date">Tháng 3 2022</string>
+    <string name="budget_month">Tháng</string>
+    <string name="budget_year">Năm</string>
+
+    <string name="budget_add_categories">Thể loại</string>
+    <string name="budget_add_budget">Ngân sách</string>
+    <string name="budget_description_hint">Mô tả ngân sách</string>
+    <string name="budget_description">Mô tả</string>
+    <string name="budget_error">Thiếu phần</string>
+
+    <string name="budget_des_value">Description</string>
+    <string name="budget_value" translatable="false">30000</string>
+    <string name="chart_center_lable">Ngân sách</string>
+    <string name="report_lable">Ngân sách</string>
+
+    <string name="name_title">Tên</string>
+    <string name="description_title">Description</string>
+    <string name="todate_title">To date</string>
+    <string name="amount_title">Amount</string>
+
+    <string name="report_lable_real">Thực tế</string>
+    <string name="report_lable_plan">Kế hoạch</string>
+    <string name="budget_value_have">Ngân sách còn lại</string>
+    <string name="vn" translatable="false">VNĐ</string>
+
+    <string name="english">Tiếng anh</string>
+    <string name="vietnamese">Tiếng việt</string>
+
+
+
+</resources>

@@ -1,0 +1,223 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorBackground"
+    android:orientation="vertical"
+    tools:context=".Activities.Settings.EmailSettingsActivity"
+    android:padding="20dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:orientation="horizontal"
+        android:layout_marginBottom="50dp">
+
+        <ImageButton
+            android:id="@+id/backBtn"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:background="@drawable/back_btn_background"
+            android:src="@drawable/chevron_left"/>
+
+        <TextView
+            android:id="@+id/topTitle"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="@string/email_information"
+            android:textStyle="bold"
+            android:layout_marginEnd="40dp"
+            android:textSize="22sp"
+            android:textColor="@color/colorButtomNavigationMenuPressed"/>
+
+    </LinearLayout>
+
+    <ScrollView
+        android:id="@+id/scrollView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/smtp_information"
+                style="@style/text_view_header"/>
+            <include layout="@layout/fragment_settings_element_header"/>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:orientation="vertical"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="20dp">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/host"
+                    style="@style/text_view_label"/>
+
+                <EditText
+                    android:id="@+id/txtHost"
+                    android:inputType="text"
+                    android:textColor="@color/colorNormalText"
+                    android:hint="@string/host"
+                    style="@style/custom_input" />
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginTop="10dp"
+                    android:weightSum="1">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.5"
+                        android:layout_marginRight="20dp"
+                        android:orientation="vertical">
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="@string/port"
+                            style="@style/text_view_label"/>
+
+                        <EditText
+                            android:id="@+id/txtPort"
+                            android:inputType="text"
+                            android:textColor="@color/colorNormalText"
+                            android:hint="@string/port"
+                            style="@style/custom_input" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.5"
+                        android:orientation="vertical">
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="@string/encryption"
+                            style="@style/text_view_label"/>
+
+                        <Spinner
+                            android:id="@+id/spnEncryption"
+                            android:textColor="@color/colorNormalText"
+                            android:layout_gravity="center_horizontal"
+                            android:layout_width="match_parent"
+                            android:paddingStart="20dp"
+                            android:paddingEnd="20dp"
+                            android:background="@drawable/spinner_bg"
+                            android:layout_height="50dp" />
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:text="@string/from"
+                    style="@style/text_view_label" />
+
+                <EditText
+                    android:id="@+id/txtFrom"
+                    android:inputType="text"
+                    android:hint="@string/from"
+                    android:textColor="@color/colorNormalText"
+                    style="@style/custom_input" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="1"
+                android:gravity="center_vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/auth_smtp_information"
+                    android:layout_weight="0.2"
+                    style="@style/text_view_header"/>
+
+                <Switch
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.8"
+                    android:id="@+id/swAuth"/>
+
+            </LinearLayout>
+            <include layout="@layout/fragment_settings_element_header"/>
+
+            <LinearLayout
+                android:id="@+id/authSMTP"
+                android:layout_width="match_parent"
+                android:orientation="vertical"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="40dp">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/username_email"
+                    style="@style/text_view_label"/>
+
+                <EditText
+                    android:inputType="textEmailAddress"
+                    android:textColor="@color/colorNormalText"
+                    android:hint="@string/username_email"
+                    style="@style/custom_input"
+                    android:id="@+id/username_email"/>
+
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/password"
+                    style="@style/text_view_label"
+                    android:layout_marginTop="10dp"/>
+
+
+                <EditText
+                    android:inputType="textPassword"
+                    android:textColor="@color/colorNormalText"
+                    android:hint="@string/password"
+                    style="@style/custom_input"
+                    android:id="@+id/password"/>
+
+            </LinearLayout>
+
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/saveBtn"
+                style="@style/button_style"
+                android:layout_gravity="center"
+                android:text="@string/save" />
+
+
+        </LinearLayout>
+
+
+    </ScrollView>
+
+
+
+</LinearLayout>

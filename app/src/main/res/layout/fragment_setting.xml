@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/fragmentSettingLayout"
+    tools:context=".Fragment.SettingsFragment"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:padding="20dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:orientation="horizontal"
+            android:paddingBottom="25dp"
+            android:weightSum="1">
+
+            <TextView
+                android:layout_marginLeft="40dp"
+                android:layout_weight="0.99"
+                android:id="@+id/topTitle"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:text="@string/setting"
+                android:textStyle="bold"
+                android:textSize="22sp"
+                android:textColor="@color/colorButtomNavigationMenuPressed"/>
+
+            <ImageButton
+                android:layout_weight="0.01"
+                android:id="@+id/logout"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:background="@drawable/back_btn_background"
+                android:src="@drawable/ic_baseline_login_24"/>
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/image_logo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="vertical"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:layout_marginBottom="20dp">
+
+            <ImageView
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:scaleType="centerCrop"
+                android:id="@+id/ivAvatar"
+                android:src="@drawable/cat"
+                />
+
+            <TextView
+                android:id="@+id/fullName"
+                android:layout_marginTop="10dp"
+                android:gravity="center"
+                android:textColor="@color/colorButtomNavigationMenuPressed"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/app_name"/>
+
+            <TextView
+                android:id="@+id/email"
+                android:layout_marginTop="10dp"
+                android:gravity="center"
+                android:textColor="@color/colorNormalText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/username"/>
+
+        </LinearLayout>
+
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:padding="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/lvSettings"
+        android:divider="@color/transparent"/>
+
+    </LinearLayout>
+
+
+</FrameLayout>

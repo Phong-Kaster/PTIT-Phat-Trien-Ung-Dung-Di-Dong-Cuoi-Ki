@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:paddingHorizontal="12dp">
+
+    <LinearLayout
+        android:weightSum="1"
+        android:id="@+id/user_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:layout_marginVertical="12dp">
+
+        <ImageView
+            android:layout_weight="0.01"
+            android:id="@+id/user_avatar"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:src="@drawable/icon_bg"/>
+
+        <LinearLayout
+            android:layout_marginHorizontal="20dp"
+            android:layout_weight="0.98"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <TextView
+                    android:id="@+id/user_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/colorButtomNavigationMenuPressed"
+                    android:textStyle="bold"
+                    android:textSize="18sp"
+                    android:layout_marginRight="12dp"
+                    android:text="@string/username_email"/>
+
+                <ImageView
+                    android:id="@+id/user_admin"
+                    android:layout_width="24dp"
+                    android:layout_height="24dp"
+                    android:src="@drawable/icon_bg"/>
+            </LinearLayout>
+
+
+            <TextView
+                android:id="@+id/user_email"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/colorSupportText"
+                android:textStyle="italic"
+                android:textSize="14sp"
+                android:text="@string/email"/>
+        </LinearLayout>
+
+        <ImageView
+            android:layout_weight="0.01"
+            android:id="@+id/user_active"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:src="@drawable/ic_baseline_close_24"/>
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#F3F4F6"/>
+
+</LinearLayout>

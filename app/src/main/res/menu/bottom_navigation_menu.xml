@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/shortcutHome"
+        android:title="@string/home"
+        app:labelVisibilityMode="unlabeled"
+        android:icon="@drawable/shortcut_home_state"/>
+
+    <item
+        android:id="@+id/shortcutCard"
+        android:title="@string/card"
+        app:labelVisibilityMode="unlabeled"
+        android:icon="@drawable/shortcut_card_state"/>
+
+    <item
+        android:id="@+id/shortcutCreate"
+        android:title=""/>
+
+    <item
+        android:id="@+id/shortcutReport"
+        android:title="@string/report"
+        app:labelVisibilityMode="unlabeled"
+        android:icon="@drawable/shortcut_transaction_state"/>
+
+    <item
+        android:id="@+id/shortcutSettings"
+        android:title="@string/setting"
+        app:labelVisibilityMode="unlabeled"
+        android:icon="@drawable/shortcut_account_state"/>
+</menu>

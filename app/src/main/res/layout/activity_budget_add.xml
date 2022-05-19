@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorBackground"
+    android:orientation="vertical"
+    android:padding="20dp"
+    tools:context=".Activities.Budget.AddBudgetActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginBottom="50dp"
+        android:orientation="horizontal">
+
+        <ImageButton
+            android:id="@+id/budget_back"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:background="@drawable/back_btn_background"
+            android:src="@drawable/chevron_left" />
+
+        <TextView
+            android:id="@+id/budget_title"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginEnd="40dp"
+            android:gravity="center"
+            android:text="@string/budget_add_title"
+            android:textColor="@color/colorButtomNavigationMenuPressed"
+            android:textSize="22sp"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20dp"
+            android:orientation="horizontal">
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_marginEnd="20dp"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+                <TextView
+                    style="@style/text_view_label"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="16dp"
+                    android:text="@string/budget_month" />
+                <com.example.prudentialfinance.component.MyNumberPicker
+                    android:id="@+id/budget_month_picker"
+                    style="@style/custom_picker"
+                    android:hint="@string/goal_deadline_tv"
+                    android:inputType="text"
+                    android:textColor="@color/colorNormalText"
+                    type = "month"/>
+
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+                <TextView
+                    style="@style/text_view_label"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="16dp"
+                    android:text="@string/budget_year" />
+                <com.example.prudentialfinance.component.MyNumberPicker
+                    android:id="@+id/budget_year_picker"
+                    style="@style/custom_picker"
+                    android:hint="@string/goal_deadline_tv"
+                    android:textColor="@color/colorNormalText"
+                    type = "year" />
+
+            </LinearLayout>
+        </LinearLayout>
+
+        <TextView
+            style="@style/text_view_label"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="@string/budget_add_categories" />
+
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <Spinner
+                android:id="@+id/budget_categories"
+                android:layout_width="match_parent"
+                android:layout_height="50sp" />
+
+        </RelativeLayout>
+
+
+        <TextView
+            style="@style/text_view_label"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="@string/budget_add_budget" />
+
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <EditText
+                android:id="@+id/budget_budget"
+                style="@style/custom_input"
+                android:hint="@string/goal_balance_tv"
+                android:inputType="text"
+                android:text="@string/budget_value"
+                android:textColor="@color/colorNormalText" />
+
+            <TextView
+                android:id="@+id/currency_lable"
+                style="@style/text_view_label"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_centerInParent="true"
+                android:paddingEnd="10dp"
+                android:text="@string/vn"
+                tools:ignore="RtlSymmetry" />
+
+        </RelativeLayout>
+
+        <TextView
+            style="@style/text_view_label"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="@string/budget_description" />
+
+        <EditText
+            android:id="@+id/budget_description"
+            style="@style/custom_input"
+            android:layout_height="100sp"
+            android:hint="@string/budget_description_hint"
+            android:inputType="text"
+            android:text="@string/budget_des_value"
+            android:textColor="@color/colorNormalText"
+            tools:ignore="TextFields" />
+
+    </LinearLayout>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btn_budget"
+        style="@style/button_style"
+        android:layout_gravity="center"
+        android:text="@string/goal_add" />
+</LinearLayout>

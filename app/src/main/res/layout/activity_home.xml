@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorBackground"
+    android:orientation="vertical"
+    tools:context=".HomeActivity">
+
+    <FrameLayout
+        android:id="@+id/frameLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="58dp">
+    </FrameLayout>
+
+    <com.google.android.material.bottomappbar.BottomAppBar
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        app:fabAlignmentMode="center"
+        android:id="@+id/bottomAppBar"
+        app:fabCradleMargin="10dp"
+        app:fabCradleRoundedCornerRadius="30dp"
+        app:fabCradleVerticalOffset="0dp">
+
+        <com.google.android.material.bottomnavigation.BottomNavigationView
+            android:id="@+id/bottomNavigationMenu"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginEnd="16dp"
+            android:background="@drawable/transparent_background"
+            app:itemIconTint="@drawable/shortcut_menu_state"
+            app:itemTextColor="@drawable/shortcut_menu_state"
+            app:menu="@menu/bottom_navigation_menu" />
+
+    </com.google.android.material.bottomappbar.BottomAppBar>
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/fab"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="#1DAB87"
+        android:src="@drawable/ic_baseline_add_24"
+        app:layout_anchor="@id/bottomAppBar"
+        app:tint="@color/white" />
+
+    <LinearLayout
+        app:layout_anchor="@id/fab"
+        app:layout_anchorGravity="center"
+        android:layout_marginBottom="80sp"
+        android:orientation="vertical"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+                <com.google.android.material.floatingactionbutton.FloatingActionButton
+                    app:borderWidth="0dp"
+                    android:layout_marginBottom="12dp"
+                    android:id="@+id/transactionFab"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:visibility="invisible"
+                    app:tint="@color/white"
+                    android:backgroundTint="@color/colorTheme"
+                    app:srcCompat="@drawable/icon_transactions" />
+
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+                    app:borderWidth="0dp"
+                    android:layout_marginBottom="12dp"
+                    android:id="@+id/goalFab"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:visibility="invisible"
+                    app:tint="@color/white"
+                    android:backgroundTint="@color/colorGreen"
+                    app:srcCompat="@drawable/icon_goal" />
+
+                <com.google.android.material.floatingactionbutton.FloatingActionButton
+                    app:borderWidth="0dp"
+                    android:layout_marginBottom="12dp"
+                    android:layout_gravity="bottom"
+                    android:id="@+id/budgetFab"
+                    android:visibility="invisible"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:tint="@color/white"
+                    android:backgroundTint="#CE56D7"
+                    app:srcCompat="@drawable/ic_baseline_archive_24" />
+
+                <com.google.android.material.floatingactionbutton.FloatingActionButton
+                    app:borderWidth="0dp"
+                    android:layout_marginBottom="12dp"
+                    android:id="@+id/categoryFab"
+                    android:layout_width="wrap_content"
+                    android:layout_height="146dp"
+                    android:visibility="invisible"
+                    app:tint="@color/white"
+                    android:backgroundTint="#4831D4"
+                    app:srcCompat="@drawable/ic_baseline_category_24" />
+
+
+    </LinearLayout>
+
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

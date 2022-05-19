@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.example.prudentialfinance">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission
+        android:name="android.permission.WRITE_EXTERNAL_STORAGE"
+        tools:ignore="ScopedStorage" />
+
+    <application
+        android:name=".Model.GlobalVariable"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:requestLegacyExternalStorage="true"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.PrudentialFinance"
+        android:usesCleartextTraffic="true">
+        <activity
+            android:name=".Activities.Budget.BudgetReportActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Activities.Transaction.TransactionMenuActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Activities.Card.AccountChartActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Activities.Report.CategoryExportActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Activities.Card.AccountReportActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Activities.Transaction.TransactionPreviewStatementActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Activities.General.DepositActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Activities.General.GoalDetailActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Activities.Transaction.TransactionStatementActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Activities.Transaction.TransactionUpdateActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Activities.Transaction.TransactionInformationActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Activities.Transaction.TransactionCreationActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Activities.Settings.DarkModeActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Activities.Budget.BudgetsActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Activities.Budget.AddBudgetActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Activities.Budget.BudgetReportCategoriesActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Activities.Report.TransactionsByCategoryActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Activities.Transaction.TransactionActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Activities.Settings.AddUserActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Activities.Settings.UserManagementActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Activities.General.AddGoalActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Activities.General.GoalActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Activities.General.AddCategoryActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Activities.General.CategoriesActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Activities.Card.CardUpdateActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Activities.Card.CardCreationActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Activities.Settings.EmailSettingsActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Activities.Settings.SiteSettingsActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Activities.Settings.PasswordActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Activities.Settings.ProfileActivity"
+            android:exported="false" />
+        <activity
+            android:name=".HomeActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Activities.Auth.SignUpActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Activities.Auth.ResetPasswordActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Activities.Auth.RecoveryActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Activities.Auth.LoginActivity"
+            android:exported="false" />
+        <activity
+            android:name=".IntroduceActivity"
+            android:exported="false" />
+        <activity
+            android:name=".MainActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <meta-data
+            android:name="com.facebook.sdk.ApplicationId"
+            android:value="@string/facebook_app_id" />
+        <meta-data
+            android:name="com.facebook.sdk.ClientToken"
+            android:value="@string/facebook_client_token" />
+
+        <activity
+            android:name="com.facebook.FacebookActivity"
+            android:configChanges="keyboard|keyboardHidden|screenLayout|screenSize|orientation"
+            android:label="@string/app_name" />
+        <activity
+            android:name="com.facebook.CustomTabActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+
+                <data android:scheme="@string/fb_login_protocol_scheme" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

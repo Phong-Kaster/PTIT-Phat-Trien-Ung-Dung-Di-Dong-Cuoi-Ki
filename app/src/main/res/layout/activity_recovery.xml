@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorBackground"
+    android:orientation="vertical"
+    tools:context=".Activities.Auth.RecoveryActivity">
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/green_lock"
+        android:layout_marginTop="60dp"
+        android:layout_marginStart="20dp"
+        />
+
+    <TextView
+        style="@style/text_view_color_theme_style"
+        android:text= "@string/recovery_title"
+        android:textSize="24sp"
+        android:layout_marginTop="20dp"
+        android:layout_marginStart="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <TextView
+        style="@style/text_view_color_normal_style"
+        android:layout_width="265dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:text="@string/recovery_descrip"
+        android:textSize="16sp" />
+
+
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="10dp"/>
+
+   <LinearLayout
+       android:padding="20dp"
+       android:layout_width="match_parent"
+       android:orientation="vertical"
+       android:layout_height="wrap_content">
+
+       <EditText
+           android:id="@+id/emailRecovery"
+           android:inputType="textEmailAddress"
+           android:text="@string/username"
+           android:drawableStart="@drawable/mail"
+           android:hint="@string/email"
+           style="@style/custom_input" />
+
+<!--       <com.example.prudentialfinance.Helpers.OTPEditText-->
+<!--           android:id="@+id/et_otp"-->
+<!--           android:layout_width="match_parent"-->
+<!--           android:layout_height="wrap_content"-->
+<!--           android:cursorVisible="true"-->
+<!--           android:digits="1234567890"-->
+<!--           android:inputType="number"-->
+<!--           android:maxLength="6"-->
+<!--           android:textIsSelectable="true"-->
+<!--           android:textSize="20sp"-->
+<!--           />-->
+
+
+
+
+   </LinearLayout>
+
+
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="40dp"/>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btn_recovery_Send"
+        style="@style/button_style"
+        android:layout_gravity="center"
+        android:text="@string/recovery_send_btn" />
+
+
+
+
+</LinearLayout>

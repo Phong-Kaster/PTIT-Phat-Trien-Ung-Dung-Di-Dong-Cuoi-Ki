@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:id="@+id/cat_layout"
+    android:paddingHorizontal="12dp">
+
+
+    <ImageButton
+        android:layout_gravity="center"
+        android:id="@+id/cat_color"
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        android:background="@drawable/color_bg"
+        android:layout_marginRight="15dp"/>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:layout_marginVertical="12dp">
+
+            <TextView
+                android:id="@+id/cat_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/colorButtomNavigationMenuPressed"
+                android:textStyle="bold"
+                android:textSize="14sp"
+                android:layout_marginRight="10dp"
+                android:text="@string/categories"/>
+
+            <TextView
+                android:id="@+id/cat_amount"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/colorSupportText"
+                android:textSize="14sp"
+                android:text="@string/amount_value"/>
+
+            <TextView
+                android:gravity="end"
+                android:id="@+id/cat_value"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/backgroundBlack"
+                android:textSize="14sp"
+                android:text="@string/money_value"/>
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#F3F4F6"/>
+    </LinearLayout>
+
+
+
+
+</LinearLayout>

@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:isScrollContainer="true"
+    android:background="@color/colorBackground"
+    android:orientation="vertical">
+
+    <ImageView
+        android:layout_width="186dp"
+        android:layout_height="243dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="5dp"
+        android:src="@drawable/card_content" />
+
+    <TextView
+        style="@style/text_view_color_theme_style"
+        android:layout_width="240dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="40sp"
+        android:text="@string/creat_new_account"
+        android:textSize="26sp"
+        android:textStyle="bold" />
+
+    <Space android:layout_height="10dp"
+        android:layout_width="match_parent"/>
+
+    <TextView
+        style="@style/text_view_color_normal_style"
+        android:textSize="13sp"
+        android:layout_marginStart="40sp"
+        android:textAlignment="viewStart"
+        android:text="@string/add_account_to_manage_easily"
+        android:layout_width="240dp"
+        android:layout_height="wrap_content"/>
+
+    <Space android:layout_height="10dp"
+        android:layout_width="match_parent"/>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/cardButtonCreate"
+        style="@style/card_fragment_button_style"
+        android:gravity="center"
+        android:text="@string/begin_create_account" />
+
+    <Space android:layout_height="20dp"
+        android:layout_width="match_parent"/>
+
+</LinearLayout>

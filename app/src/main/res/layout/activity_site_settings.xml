@@ -1,0 +1,241 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorBackground"
+    android:orientation="vertical"
+    tools:context=".Activities.Settings.SiteSettingsActivity"
+    android:padding="20dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:orientation="horizontal"
+        android:layout_marginBottom="50dp">
+
+        <ImageButton
+            android:id="@+id/backBtn"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:background="@drawable/back_btn_background"
+            android:src="@drawable/chevron_left"/>
+
+        <TextView
+            android:id="@+id/topTitle"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="@string/site_settings"
+            android:textStyle="bold"
+            android:layout_marginEnd="40dp"
+            android:textSize="22sp"
+            android:textColor="@color/colorButtomNavigationMenuPressed"/>
+
+    </LinearLayout>
+
+
+    <ScrollView
+        android:id="@+id/scrollView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/application"
+                style="@style/text_view_header"/>
+            <include layout="@layout/fragment_settings_element_header"/>
+
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:orientation="vertical"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="20dp">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/site_name"
+                    style="@style/text_view_label"/>
+
+                <EditText
+                    android:id="@+id/siteName"
+                    android:inputType="text"
+                    android:textColor="@color/colorNormalText"
+                    android:hint="@string/site_name"
+                    style="@style/custom_input" />
+
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/site_slogan"
+                    android:layout_marginTop="10dp"
+                    style="@style/text_view_label" />
+
+                <EditText
+                    android:id="@+id/siteSlogan"
+                    android:text=""
+                    android:inputType="text"
+                    android:hint="@string/site_slogan"
+                    android:textColor="@color/colorNormalText"
+                    style="@style/custom_input" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/site_keyword"
+                    android:layout_marginTop="10dp"
+                    style="@style/text_view_label" />
+
+                <EditText
+                    android:id="@+id/siteKeyword"
+                    android:text=""
+                    android:inputType="textMultiLine"
+                    android:lines="8"
+                    android:scrollbars="vertical"
+                    android:hint="@string/site_keyword"
+                    android:textColor="@color/colorNormalText"
+                    android:layout_height="wrap_content"
+                    style="@style/custom_input" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/site_description"
+                    android:layout_marginTop="10dp"
+                    style="@style/text_view_label" />
+
+                <EditText
+                    android:id="@+id/siteDescription"
+                    style="@style/custom_input"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/site_description"
+                    android:inputType="textMultiLine"
+                    android:lines="8"
+                    android:scrollbars="vertical"
+                    android:text=""
+                    android:textColor="@color/colorNormalText" />
+
+            </LinearLayout>
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/logo"
+                style="@style/text_view_header"/>
+            <include layout="@layout/fragment_settings_element_header"/>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:orientation="vertical"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="20dp">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/logotype"
+                    style="@style/text_view_label"/>
+
+                <EditText
+                    android:id="@+id/logoType"
+                    android:inputType="text"
+                    android:textColor="@color/colorNormalText"
+                    android:hint="@string/logotype"
+                    style="@style/custom_input" />
+
+                <Space
+                    android:layout_width="match_parent"
+                    android:layout_height="10dp"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/logomark"
+                    style="@style/text_view_label" />
+
+                <EditText
+                    android:id="@+id/logoMark"
+                    android:text=""
+                    android:inputType="text"
+                    android:hint="@string/logomark"
+                    android:textColor="@color/colorNormalText"
+                    style="@style/custom_input" />
+
+            </LinearLayout>
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/other"
+                style="@style/text_view_header"/>
+            <include layout="@layout/fragment_settings_element_header"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:orientation="vertical"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="20dp">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/currency"
+                    style="@style/text_view_label"/>
+
+                <EditText
+                    android:id="@+id/currency"
+                    android:inputType="text"
+                    android:textColor="@color/colorNormalText"
+                    android:hint="@string/currency"
+                    style="@style/custom_input" />
+
+                <Space
+                    android:layout_width="match_parent"
+                    android:layout_height="10dp"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/language"
+                    style="@style/text_view_label" />
+
+                <Spinner
+                    android:id="@+id/spnLanguage"
+                    android:textColor="@color/colorNormalText"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_width="match_parent"
+                    android:paddingStart="20dp"
+                    android:paddingEnd="20dp"
+                    android:background="@drawable/spinner_bg"
+                    android:layout_height="50dp" />
+
+
+            </LinearLayout>
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/saveBtn"
+                style="@style/button_style"
+                android:layout_gravity="center"
+                android:text="@string/save" />
+        </LinearLayout>
+
+    </ScrollView>
+
+
+</LinearLayout>

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:id="@+id/notifLayout"
+    android:layout_height="wrap_content"
+    android:background="@drawable/custom_element"
+    android:orientation="vertical">
+
+    <TextView
+        android:textColor="@color/colorNormalText"
+        android:padding="10dp"
+        android:id="@+id/titleNotif"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Nghiên cứu Jagdpanzer E-100"
+        android:textSize="14sp"
+        android:textStyle="bold" />
+
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#F3F4F6"/>
+
+</LinearLayout>

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/incomeTransaction"
+        android:icon="@drawable/ic_baseline_arrow_circle_right_24"
+        app:showAsAction="always"
+        android:title="@string/income"/>
+
+    <item
+        android:id="@+id/expenseTransaction"
+        app:showAsAction="ifRoom"
+        android:icon="@drawable/ic_baseline_arrow_circle_left_24"
+        android:title="@string/expense"/>
+
+    <item
+        android:id="@+id/statement"
+        app:showAsAction="always"
+        android:icon="@drawable/ic_baseline_checklist_24"
+        android:title="@string/statement" />
+
+</menu>

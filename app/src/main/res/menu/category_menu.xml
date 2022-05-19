@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/incomeMenu"
+        android:icon="@drawable/ic_baseline_keyboard_double_arrow_up_24"
+        android:title="@string/income"/>
+
+    <item
+        android:id="@+id/expenseMenu"
+        android:icon="@drawable/ic_baseline_keyboard_double_arrow_down_24"
+        android:title="@string/expense"/>
+
+</menu>

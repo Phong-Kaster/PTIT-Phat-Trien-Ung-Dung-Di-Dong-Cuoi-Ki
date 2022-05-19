@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:paddingHorizontal="12dp">
+
+    <LinearLayout
+        android:id="@+id/cat_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:layout_marginVertical="12dp">
+
+        <ImageButton
+            android:id="@+id/cat_color"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:background="@drawable/icon_bg"
+            android:layout_marginRight="20dp"/>
+
+       <LinearLayout
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:orientation="vertical">
+           <TextView
+               android:id="@+id/cat_name"
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:textColor="@color/colorButtomNavigationMenuPressed"
+               android:textStyle="bold"
+               android:textSize="18sp"
+               android:text="@string/categories"/>
+
+           <TextView
+               android:id="@+id/cat_desc"
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:textColor="@color/colorSupportText"
+               android:textStyle="italic"
+               android:textSize="14sp"
+               android:text="@string/categories"/>
+       </LinearLayout>
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#F3F4F6"/>
+
+</LinearLayout>
