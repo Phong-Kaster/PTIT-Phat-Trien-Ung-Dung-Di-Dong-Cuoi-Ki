@@ -53,6 +53,9 @@ public class TransactionViewModel extends ViewModel {
     /**
      * @author Phong-Kaster
      * create a whole new transaction
+     *
+     * jwt token
+     * content-type
      * */
     public void createTransaction(Map<String ,String> headers,
                                   String categoryId,

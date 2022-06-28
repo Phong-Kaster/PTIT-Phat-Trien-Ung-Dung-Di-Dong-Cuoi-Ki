@@ -49,6 +49,17 @@ học [Phát Triển Phần Mềm Hướng Dịch Vụ](#) do thầy Huỳnh Tru
 
 Ngoài ra, đây là đồ án cuối cùng mà chúng mình làm với vai trò là sinh viên theo học tại Học viện Công nghệ Bưu Chính viễn thông này.
 
+
+Ngoài ra, đồ án này là một trong 4 thành phần của môn Phát Triển Phần Mềm Hướng Dịch Vụ do thầy Huỳnh Trung Trụ giảng dạy. Các bạn có thể xem các thành phần còn lại tại như dưới đây:
+
+- [**Restful API**](https://github.com/Phong-Kaster/PTIT-Phat-Trien-Phan-Mem-Huong-Dich-Vu-API#)
+
+- [**Website**](https://github.com/Phong-Kaster/PTIT-Phat-Trien-Phan-Mem-Huong-Dich-Vu-Website)
+
+- [**Android**](https://github.com/Phong-Kaster/PTIT-Phat-Trien-Ung-Dung-Di-Dong-Cuoi-Ki)
+
+- [**iOS**](#)
+
 # [**Architecture**](#architecture)
 
 Đồ án này được phát triển theo mô hình nổi tiếng là `Model - View - View Model`.
